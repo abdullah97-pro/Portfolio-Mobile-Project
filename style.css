@@ -7,7 +7,7 @@
   --color2: #172b4d;
   --color3: #344563;
   --color4: #7f8cff;
-  --color5: #7A869A;
+  --color5: #7a869a;
 }
 
 * {
@@ -34,10 +34,41 @@ main {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #toolbar nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.programming-lang li {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #253858;
+  margin: 16px 20px 16px 0;
+  gap: 16px;
+  padding: 10px;
+}
+
+main .card-works .card .card-description .web-languages li {
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+main .card-works .card .card-description .web-languages li a {
+  text-decoration: none;
 }
 
 #toolbar nav ul li {
@@ -120,6 +151,17 @@ main #headline ul li {
   padding-left: 0;
 }
 
+#about-myself h3 {
+  color: var(--color4);
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px 0;
+}
+
 #headline h3:hover {
   color: var(--primary-1);
 }
@@ -138,7 +180,7 @@ main .card-works {
   border: 1px solid #e7e7e7;
 }
 
-main .card-works .card{
+main .card-works .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +198,7 @@ main .card-works .card .card-description {
 main .card-works .card .card-description .card-title {
   text-transform: capitalize;
   color: var(--color2);
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 33px;
   font-style: normal;
   font-weight: 700;
@@ -171,7 +213,7 @@ main .card-works .card .card-description .subheading {
 
 main .card-works .card .card-description .subheading .canopy {
   color: var(--color3);
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -181,7 +223,7 @@ main .card-works .card .card-description .subheading .canopy {
 
 main .card-works .card .card-description .subheading .subheading-list {
   color: var(--color5);
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -191,7 +233,7 @@ main .card-works .card .card-description .subheading .subheading-list {
 
 main .card-works .card .card-description .card-content {
   color: var(--color3);
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -200,7 +242,7 @@ main .card-works .card .card-description .card-content {
 
 main .card-works .card .card-description .web-languages {
   display: flex;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -212,17 +254,6 @@ main .card-works .card .card-description .web-languages {
   text-transform: uppercase;
 }
 
-main .card-works .card .card-description .web-languages li {
-  background-color: #ebebff;
-  padding: 4px 12px;
-  border-radius: 8px;
-  margin: 10px 0;
-}
-
-main .card-works .card .card-description .web-languages li a {
-  text-decoration: none;
-}
-
 main .card-works .card .card-description .see-project {
   display: flex;
   align-items: center;
@@ -230,7 +261,7 @@ main .card-works .card .card-description .see-project {
   border-radius: 8px;
   background-color: #fff;
   color: #396df2;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -241,21 +272,23 @@ main .card-works .card .card-description .see-project {
 }
 
 main .card-works .card .card-description .see-project:hover {
- color: var(--white);
- cursor: pointer;
- background-color: var(--primary-1);
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--primary-1);
 }
-
 
 /* about  */
 
 #about-myself {
   padding: 100px 30px;
   background-color: var(--white);
-  border-radius: 0 80px 0 0;
   margin-top: 130px;
+  border-radius: 0 100px 0 0 / 100px;
+  padding-top: 25%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
-  
+
 #about-myself h1 {
   color: var(--color2);
   font-size: 40px;
@@ -263,7 +296,7 @@ main .card-works .card .card-description .see-project:hover {
   font-weight: 700;
   line-height: 52px;
 }
-  
+
 #about-myself p {
   color: var(--color3);
   line-height: 24px;
@@ -271,17 +304,6 @@ main .card-works .card .card-description .see-project:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin: 10px 0;
-}
-  
-#about-myself h3 {
-  color: var(--color4);
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  padding: 10px 0;
 }
 
 #about-myself h3:hover {
@@ -291,7 +313,7 @@ main .card-works .card .card-description .see-project:hover {
 #about-myself ul.social {
   list-style-type: none;
 }
-  
+
 #about-myself ul.social li {
   display: inline-flex;
   padding: 10px 8px;
@@ -324,7 +346,7 @@ main .card-works .card .card-description .see-project:hover {
 }
 
 #about-myself .my-resume:active {
-  box-shadow: 2px 2px 5px #2230d2 ;
+  box-shadow: 2px 2px 5px #2230d2;
 }
 
 #about-myself .programming-lang {
@@ -336,35 +358,11 @@ main .card-works .card .card-description .see-project:hover {
   padding-left: 16px;
 }
 
-.programming-lang li {
-  display: flex;
-  align-items: center;
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  color: #253858;
-  margin: 16px 20px 16px 0;
-  gap: 16px;
-  padding: 10px;
-}
-
-#about-myself {
-  background-color: #fff;
-  border-radius: 0 100px 0 0 / 100px;
-  padding-top: 25%;
-  padding-right: 8%;
-  padding-left: 8%;
-}
-
 .list-title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -374,10 +372,6 @@ main .card-works .card .card-description .see-project:hover {
   margin-bottom: 0;
   list-style-type: none;
   padding-left: 0;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .list-separator {
