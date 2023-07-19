@@ -289,6 +289,7 @@ main .card-works .card .card-description .see-project:hover {
   padding-top: 25%;
   padding-right: 8%;
   padding-left: 8%;
+  padding-bottom: 40%;
 }
 
 #about-myself h1 {
@@ -405,4 +406,21 @@ main .card-works .card .card-description .see-project:hover {
 #aboutme-list {
   margin: 0;
   padding: 0;
+}
+
+#contact {
+  background-color: var(--white);
+}
+
+.contact-form {
+  padding: 100px 30px;
+  background-image: url('./Icons/contact\ form\ shapes-mobile.svg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: var(--primary-1);
+  border-radius: 100px 0 0 0 / 100px;
+  padding-top: 25%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
