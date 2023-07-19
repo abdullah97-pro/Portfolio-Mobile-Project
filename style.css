@@ -8,6 +8,7 @@
   --color3: #344563;
   --color4: #7f8cff;
   --color5: #7a869a;
+  --color6: #ebebff;
 }
 
 * {
@@ -413,14 +414,82 @@ main .card-works .card .card-description .see-project:hover {
 }
 
 .contact-form {
+  display: flex;
+  flex-direction: column;
   padding: 100px 30px;
   background-image: url('./Icons/contact\ form\ shapes-mobile.svg');
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  background-size: contain;
+  background-position: 100%;
   background-color: var(--primary-1);
   border-radius: 100px 0 0 0 / 100px;
   padding-top: 25%;
   padding-right: 8%;
   padding-left: 8%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+.contact-form h1 {
+  color: var(--white);
+  font-size: 42px;
+}
+
+.contact-form p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--color6);
+  padding: 10px 0;
+}
+
+.contact-form .inputs,
+.inputs-msg {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.contact-form .inputs-msg {
+  height: 150px;
+}
+
+.contact-form input,
+textarea {
+  display: flex;
+  width: 80%;
+  height: 18px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color3);
+  margin: 16px 15px 36px 15px;
+  border: none;
+  /* outline: none; */
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 14vh;
+  resize: none;
+}
+
+.contact-form input:hover {
+  border: 3px solid #cfd8dc;
+}
+
+.contact-form textarea:hover {
+  border: 3px solid #cfd8dc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid blueviolet;
 }
