@@ -109,12 +109,25 @@ main .card-works .card .card-description .web-languages li a {
   border-radius: 0 0 0 80px;
 }
 
+.contact-form h1 {
+  color: var(--white);
+  font-size: 42px;
+}
+
 #headline h1 {
   color: var(--color2);
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 52px;
+}
+
+.contact-form p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--color6);
+  padding: 10px 0;
 }
 
 #headline p {
@@ -431,19 +444,6 @@ main .card-works .card .card-description .see-project:hover {
   text-align: center;
 }
 
-.contact-form h1 {
-  color: var(--white);
-  font-size: 42px;
-}
-
-.contact-form p {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 400;
-  color: var(--color6);
-  padding: 10px 0;
-}
-
 .contact-form .inputs,
 .inputs-msg {
   width: 100%;
@@ -472,7 +472,6 @@ textarea {
   color: var(--color3);
   margin: 16px 15px 36px 15px;
   border: none;
-  /* outline: none; */
   box-sizing: border-box;
 }
 
