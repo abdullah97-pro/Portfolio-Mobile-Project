@@ -99,6 +99,10 @@ main .card-works .card .card-description .web-languages li a {
   line-height: 20px;
 }
 
+#headline ul li a:last-child {
+  padding-left: 0;
+}
+
 #toolbar nav ul.nav li a {
   font-weight: 900;
 }
@@ -168,10 +172,6 @@ main #headline ul li {
   align-items: flex-start;
   gap: 12px;
   font-size: 16px;
-}
-
-#headline ul li a:last-child {
-  padding-left: 0;
 }
 
 #about-myself h3 {
@@ -472,7 +472,7 @@ main .card-works .card .card-description .see-project:hover {
 .contact-form input,
 textarea {
   display: flex;
-  width: 80%;
+  width: 90%;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
@@ -480,7 +480,7 @@ textarea {
   font-weight: 400;
   line-height: 20px;
   color: var(--color3);
-  margin: 14px 15px;
+  margin: 12px 0 14px 14px;
   border: none;
   box-sizing: border-box;
 }
@@ -490,13 +490,13 @@ textarea {
   resize: none;
 }
 
-.contact-form input:hover {
+/* .contact-form input:hover {
   border: 3px solid #cfd8dc;
 }
 
 .contact-form textarea:hover {
   border: 3px solid #cfd8dc;
-}
+} */
 
 .contact-form input:focus,
 .contact-form textarea:focus {
