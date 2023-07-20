@@ -500,14 +500,16 @@ textarea {
 .contact-btn {
   margin: auto;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Poppins', sans-serif;
   color: #7f8cff;
   font-weight: 500;
-  padding: 0.7em;
+  padding: 0.7em 1em;
   border-radius: 0.5em;
   border: 1px solid #7f8cff;
   float: left;
+  letter-spacing: 0.51px;
+  line-height: 24px;
 }
 
 .contact-btn:hover {
