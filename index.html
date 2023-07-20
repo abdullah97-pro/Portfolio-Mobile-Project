@@ -9,13 +9,21 @@
   <body>
     <header id="toolbar">
       <nav>
-        <ul>
+        <ul class="nav">
           <li><a href="/">my logo</a></li>
-          <li>
+          <li class="menu-icon">
             <button type="button">
               <img src="./Icons/Icon - Menu.svg" alt="" />
             </button>
           </li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ul class="navbar">
+          <li><a href="/">portfolio</a></li>
+          <li><a href="/">about</a></li>
+          <li><a href="/">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -270,15 +278,15 @@
                you need built or a project that needs
                 coding. I’d love to help with it!
             </p>
-            <form action="/" method="post">
+            <form action="https://formspree.io/f/xqkvalkp" method="post">
               <div class="inputs">
-                <input type="text" name="firstname" placeholder="Abdullah Ahmadi">
+                <input type="text" name="firstname" placeholder="Abdullah Ahmadi" maxlength="30" required>
               </div>
               <div class="inputs">
-                <input type="email" name="email" placeholder="abdullahahmadi019@gmail.com">
+                <input type="email" name="email" placeholder="abdullahahmadi019@gmail.com" required>
               </div>
               <div class="inputs-msg">
-                <textarea name="msg" id="msg" placeholder="Write your message here..."></textarea>
+                <textarea name="msg" id="msg" placeholder="Write your message here..." maxlength="500" required></textarea>
               </div>
               <button type="button" class="contact-btn">Get in touch</button>
             </form>
