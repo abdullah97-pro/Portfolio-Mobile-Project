@@ -496,3 +496,14 @@ textarea {
 .contact-form textarea:focus {
   border: 1px solid blueviolet;
 }
+
+.contact-btn {
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #7f8cff;
+  font-weight: 500;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  border: 1px solid #7f8cff;
+}
