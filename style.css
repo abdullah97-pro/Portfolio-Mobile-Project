@@ -430,17 +430,21 @@ main .card-works .card .card-description .see-project:hover {
   background-color: var(--white);
 }
 
+.contact-bg-form {
+  background-color: var(--primary-1);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 100px 0 0 0 / 100px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 100px 30px;
   background-image: url('./Icons/contact\ form\ shapes-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 100%;
-  background-color: var(--primary-1);
-  border-radius: 100px 0 0 0 / 100px;
-  padding-top: 25%;
+  padding-top: 19%;
   padding-right: 8%;
   padding-left: 8%;
   font-family: 'Poppins', sans-serif;
