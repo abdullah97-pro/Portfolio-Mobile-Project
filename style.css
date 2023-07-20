@@ -16,12 +16,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+7
 main {
   width: 100%;
   height: 100vh;
   background-color: var(--background-main);
   overflow: auto;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
 }
 
 #toolbar {
