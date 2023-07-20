@@ -507,3 +507,12 @@ textarea {
   border-radius: 0.5em;
   border: 1px solid #7f8cff;
 }
+
+.contact-btn:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.contact-btn:active {
+  background-color: #2230D2;
+}
