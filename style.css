@@ -16,7 +16,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-7
+
 main {
   width: 100%;
   height: 100vh;
@@ -516,5 +516,5 @@ textarea {
 }
 
 .contact-btn:active {
-  background-color: #2230D2;
+  background-color: #2230d2;
 }
