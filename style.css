@@ -407,18 +407,22 @@ ul {
 
 @keyframes bg {
   0% {
+    color: #6070ff;
     background-color: white;
   }
 
   25% {
+    color: #757bac;
     background-color: rgb(176, 178, 206);
   }
 
   75% {
+    color: #c3c5db;
     background-color: rgb(152, 152, 192);
   }
 
   100% {
+    color: #fff;
     background-color: var(--primary-1);
   }
 }
