@@ -720,7 +720,6 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     grid-template-columns: repeat(2, 2fr);
-    border: 1px solid var(--color7);
   }
 
   .card-works .card .img {
@@ -729,6 +728,7 @@ textarea {
     background-image: url('./Icons/desktop/1 Snapshoot Portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
   }
 
   .card-works .card .img-1 {
@@ -737,6 +737,7 @@ textarea {
     background-image: url('./Icons/desktop/2 Snapshoot Portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
     order: 2;
   }
 
@@ -746,6 +747,7 @@ textarea {
     background-image: url('./Icons/desktop/3 Snapshoot Portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
   }
 
   .card-works .card .img-3 {
@@ -754,6 +756,7 @@ textarea {
     background-image: url('./Icons/desktop/4 Snapshoot Portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
     order: 2;
   }
 
