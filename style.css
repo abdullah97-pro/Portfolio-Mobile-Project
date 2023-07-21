@@ -400,7 +400,7 @@ ul {
   padding: 12px;
   gap: 10px;
   letter-spacing: 0.51px;
-  transition: background-color 2s ease-in-out;
+  transition: background-color 2s, padding 2s ease-in-out;
   animation: bg 8s;
   animation-iteration-count: infinite;
 }
@@ -434,6 +434,7 @@ ul {
   color: var(--white);
   cursor: pointer;
   background-color: var(--primary-1);
+  padding: 0.8em;
 }
 
 /* about  */
