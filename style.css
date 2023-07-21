@@ -926,4 +926,45 @@ textarea {
     flex-direction: row;
     padding-left: 16px;
   }
+
+  /* contact  */
+  #contact {
+    width: 100%;
+  }
+  .contact-bg-form {
+    width: 100%;
+    background-image: url('./Icons/desktop/contact form background shapes.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .contact-form {
+    width: 50%;
+    margin: auto;
+    background: transparent;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form .inputs,
+  .inputs-msg {
+    border-radius: 0;
+    margin: 12px 0;
+  }
+
+  .contact-btn {
+    margin: 12px auto;
+  }
 }
