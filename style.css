@@ -81,6 +81,7 @@ ul {
 
 .card-works .card .card-description .web-languages li,
 .card-works .card .card-description-1 .web-languages li,
+.card-works .card .card-description-2 .web-languages li,
 .card-works .card .card-description-3 .web-languages li {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
@@ -90,14 +91,15 @@ ul {
   margin: 10px 0;
 }
 
-.card-works .card .card-description .web-languages li.ruby,
 .card-works .card .card-description-1 .web-languages li.ruby,
+.card-works .card .card-description-2 .web-languages li.ruby,
 .card-works .card .card-description-3 .web-languages li.ruby {
   display: none;
 }
 
 .card-works .card .card-description .web-languages li a,
 .card-works .card .card-description-1 .web-languages li a,
+.card-works .card .card-description-2 .web-languages li a,
 .card-works .card .card-description-3 .web-languages li a {
   text-decoration: none;
 }
@@ -229,37 +231,38 @@ ul {
   justify-content: center;
 }
 
-.card-works .card .img {
+.card-works .card .img,
+.card-works .card .img-1,
+.card-works .card .img-2,
+.card-works .card .img-3 {
   width: 295px;
   height: 220px;
+}
+
+.card-works .card .img {
   background-image: url('./Icons/Snapshoot Portfolio.png');
   background-repeat: no-repeat;
 }
 
 .card-works .card .img-1 {
-  width: 295px;
-  height: 220px;
   background-image: url('./Icons/Snapshoot Portfolio (1).png');
   background-repeat: no-repeat;
   order: 1;
 }
 
 .card-works .card .img-2 {
-  width: 295px;
-  height: 220px;
   background-image: url('./Icons/Snapshoot Portfolio (2).png');
   background-repeat: no-repeat;
 }
 
 .card-works .card .img-3 {
-  width: 295px;
-  height: 220px;
   background-image: url('./Icons/Snapshoot Portfolio (3).png');
   background-repeat: no-repeat;
 }
 
 .card-works .card .card-description,
 .card-works .card .card-description-1,
+.card-works .card .card-description-2,
 .card-works .card .card-description-3 {
   display: flex;
   flex-direction: column;
@@ -269,13 +272,9 @@ ul {
   order: 2;
 }
 
-.card-works .card .card-description-1,
-.card-works .card .card-description-3 {
-  order: 2;
-}
-
 .card-works .card .card-description .card-title,
 .card-works .card .card-description-1 .card-title,
+.card-works .card .card-description-2 .card-title,
 .card-works .card .card-description-3 .card-title {
   text-transform: capitalize;
   color: var(--color2);
@@ -288,6 +287,7 @@ ul {
 
 .card-works .card .card-description .subheading,
 .card-works .card .card-description-1 .subheading,
+.card-works .card .card-description-2 .subheading,
 .card-works .card .card-description-3 .subheading {
   display: flex;
   align-items: center;
@@ -296,6 +296,7 @@ ul {
 
 .card-works .card .card-description .subheading .canopy,
 .card-works .card .card-description-1 .subheading .canopy,
+.card-works .card .card-description-2 .subheading .canopy,
 .card-works .card .card-description-3 .subheading .canopy {
   color: var(--color3);
   font-family: 'Poppins', sans-serif;
@@ -306,9 +307,17 @@ ul {
   text-transform: uppercase;
 }
 
+.card-works .card .card-description-1 .subheading .canopy::before {
+  content: 'canopy';
+}
+
 .card-works .card .card-description .subheading .subheading-list,
 .card-works .card .card-description-1 .subheading .subheading-list,
-.card-works .card .card-description-3 .subheading .subheading-list {
+.card-works .card .card-description-1 .subheading .subheading-list-date,
+.card-works .card .card-description-2 .subheading .subheading-list,
+.card-works .card .card-description-2 .subheading .subheading-list-date,
+.card-works .card .card-description-3 .subheading .subheading-list,
+.card-works .card .card-description-3 .subheading .subheading-list-date {
   color: var(--color18);
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -318,8 +327,13 @@ ul {
   text-transform: capitalize;
 }
 
+.card-works .card .card-description-1 .subheading .subheading-list::before {
+  content: 'back end dev';
+}
+
 .card-works .card .card-description .card-content,
 .card-works .card .card-description-1 .card-content,
+.card-works .card .card-description-2 .card-content,
 .card-works .card .card-description-3 .card-content {
   color: var(--color3);
   font-family: 'Poppins', sans-serif;
@@ -329,8 +343,13 @@ ul {
   line-height: 24px;
 }
 
+.card-works .card .card-description-1 .card-content p::before {
+  content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+}
+
 .card-works .card .card-description .web-languages,
 .card-works .card .card-description-1 .web-languages,
+.card-works .card .card-description-2 .web-languages,
 .card-works .card .card-description-3 .web-languages {
   display: flex;
   font-family: 'Poppins', sans-serif;
@@ -346,8 +365,8 @@ ul {
 }
 
 .card-works .card .card-description .see-project,
-.card-works .card .card-description .see-project-2,
 .card-works .card .card-description-1 .see-project,
+.card-works .card .card-description-2 .see-project-2,
 .card-works .card .card-description-3 .see-project {
   display: flex;
   align-items: center;
@@ -366,8 +385,8 @@ ul {
 }
 
 .card-works .card .card-description .see-project:hover,
-.card-works .card .card-description .see-project-2:hover,
 .card-works .card .card-description-1 .see-project:hover,
+.card-works .card .card-description-2 .see-project-2:hover,
 .card-works .card .card-description-3 .see-project:hover {
   color: var(--white);
   cursor: pointer;
@@ -598,7 +617,6 @@ textarea {
 }
 
 /* desktop versions */
-
 @media only screen and (min-width: 768px) {
   #toolbar {
     display: inline-flex;
@@ -710,6 +728,7 @@ textarea {
 
   .card-works .card .card-description,
   .card-works .card .card-description-1,
+  .card-works .card .card-description-2,
   .card-works .card .card-description-3 {
     width: 53%;
     height: 448px;
@@ -722,43 +741,101 @@ textarea {
     order: 1;
   }
 
-  .card-works .card .card-description .card-title {
+  .card-works .card .card-description .card-title,
+  .card-works .card .card-description-1 .card-title,
+  .card-works .card .card-description-2 .card-title,
+  .card-works .card .card-description-3 .card-title {
     font-size: 40px;
     line-height: 52px;
   }
 
-  .card-works .card .card-description .subheading .canopy {
+  .card-works .card .card-description-2 .card-title::before {
+    content: 'facebook 360';
+  }
+
+  .card-works .card .card-description-3 .card-title::before {
+    content: 'uber navigation';
+  }
+
+  .card-works .card .card-description .subheading .canopy,
+  .card-works .card .card-description-1 .subheading .canopy,
+  .card-works .card .card-description-2 .subheading .canopy,
+  .card-works .card .card-description-3 .subheading .canopy {
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
   }
 
-  .card-works .card .card-description .subheading .subheading-list {
+  .card-works .card .card-description-1 .subheading .canopy::before,
+  .card-works .card .card-description-2 .subheading .canopy::before {
+    content: 'facebook';
+  }
+
+  .card-works .card .card-description-3 .subheading .canopy::before {
+    content: 'uber';
+  }
+
+  .card-works .card .card-description .subheading .subheading-list,
+  .card-works .card .card-description-1 .subheading .subheading-list,
+  .card-works .card .card-description-1 .subheading .subheading-list-date,
+  .card-works .card .card-description-2 .subheading .subheading-list,
+  .card-works .card .card-description-2 .subheading .subheading-list-date,
+  .card-works .card .card-description-3 .subheading .subheading-list,
+  .card-works .card .card-description-3 .subheading .subheading-list-date {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
   }
 
-  .card-works .card .card-description .card-content {
+  .card-works .card .card-description-1 .subheading .subheading-list::before,
+  .card-works .card .card-description-2 .subheading .subheading-list::before {
+    content: 'full stack dev';
+  }
+
+  .card-works .card .card-description-3 .subheading .subheading-list::before {
+    content: 'lead developer';
+  }
+
+  .card-works .card .card-description-3 .subheading .subheading-list-date::before {
+    content: '2018';
+  }
+
+  .card-works .card .card-description .card-content,
+  .card-works .card .card-description-1 .card-content,
+  .card-works .card .card-description-2 .card-content,
+  .card-works .card .card-description-3 .card-content {
     font-size: 18px;
     line-height: 24px;
     padding: 14px 0 0 0;
     color: var(--color3);
   }
 
+  .card-works .card .card-description-1 .card-content p::before {
+    content: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.';
+  }
+
+  .card-works .card .card-description-2 .card-content p::before {
+    content: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.";
+  }
+
+  .card-works .card .card-description-3 .card-content p::before {
+    content: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.";
+  }
+
   .card-works .card .card-description .web-languages,
   .card-works .card .card-description-1 .web-languages,
+  .card-works .card .card-description-2 .web-languages,
   .card-works .card .card-description-3 .web-languages {
     text-transform: lowercase;
   }
 
-  .card-works .card .card-description .web-languages li.ruby,
   .card-works .card .card-description-1 .web-languages li.ruby,
+  .card-works .card .card-description-2 .web-languages li.ruby,
   .card-works .card .card-description-3 .web-languages li.ruby {
     display: block;
   }
 
-  .card-works .card .card-description .see-project-2 {
+  .card-works .card .card-description-2 .see-project-2 {
     display: flex;
     align-items: center;
     border: 1px solid var(--primary-1);
@@ -776,11 +853,11 @@ textarea {
   }
 
   .card-works .card .card-description .see-project,
-  .card-works .card .card-description .see-project-2 {
+  .card-works .card .card-description-2 .see-project-2 {
     margin: 8px 0;
   }
 
-  .card-works .card .card-description .see-project-2:hover {
+  .card-works .card .card-description-2 .see-project-2:hover {
     color: var(--color17);
     cursor: pointer;
     background-color: var(--white);
