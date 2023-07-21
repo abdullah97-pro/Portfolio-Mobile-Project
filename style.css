@@ -400,7 +400,27 @@ ul {
   padding: 12px;
   gap: 10px;
   letter-spacing: 0.51px;
-  transition: background-color 2s;
+  transition: background-color 2s ease-in-out;
+  animation: bg 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-color: white;
+  }
+
+  25% {
+    background-color: rgb(176, 178, 206);
+  }
+
+  75% {
+    background-color: rgb(152, 152, 192);
+  }
+
+  100% {
+    background-color: var(--primary-1);
+  }
 }
 
 .card-works .card .card-description .see-project:hover,
