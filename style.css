@@ -3,12 +3,23 @@
 :root {
   --background-main: #f0f2f5;
   --white: #fff;
+  --black: #000;
   --primary-1: #6070ff;
   --color2: #172b4d;
   --color3: #344563;
   --color4: #7f8cff;
   --color5: #7a869a;
   --color6: #ebebff;
+  --color7: #dfe1e6;
+  --color8: #f4f5f7;
+  --color9: #f7f7f9;
+  --color10: #253858;
+  --color11: #ebebff;
+  --color12: #e7e7e7;
+  --color13: #396df2;
+  --color14: #2230d2;
+  --color15: #cfd8dc;
+  --color16: #6070ff;
 }
 
 * {
@@ -18,7 +29,7 @@
 }
 
 body {
-  background-color: #f4f5f7;
+  background-color: var(--color8);
 }
 
 textarea {
@@ -53,14 +64,14 @@ ul {
 .programming-lang li {
   display: flex;
   align-items: center;
-  background-color: #f7f7f9;
+  background-color: var(--color9);
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-  color: #253858;
+  color: var(--color10);
   margin: 16px 20px 16px 0;
   gap: 16px;
   padding: 10px;
@@ -69,7 +80,7 @@ ul {
 .card-works .card .card-description .web-languages li {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
-  background-color: #ebebff;
+  background-color: var(--color11);
   padding: 4px 12px;
   border-radius: 8px;
   margin: 10px 0;
@@ -197,7 +208,7 @@ ul {
   border-radius: 16px;
   margin-left: 25px;
   margin-right: 25px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--color12);
 }
 
 .card-works .card {
@@ -279,8 +290,8 @@ ul {
   align-items: center;
   border: 1px solid var(--primary-1);
   border-radius: 8px;
-  background-color: #fff;
-  color: #396df2;
+  background-color: var(--white);
+  color: var(--color13);
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -348,8 +359,8 @@ ul {
 #about-myself .my-resume {
   border: 1px solid var(--primary-1);
   border-radius: 8px;
-  background-color: #fff;
-  color: #396df2;
+  background-color: var(--white);
+  color: var(--color13);
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -367,7 +378,7 @@ ul {
 }
 
 #about-myself .my-resume:active {
-  box-shadow: 2px 2px 5px #2230d2;
+  box-shadow: 2px 2px 5px var(--color14);
 }
 
 #about-myself .programming-lang {
@@ -388,7 +399,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  color: #000;
+  color: var(--black);
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
@@ -457,8 +468,8 @@ ul {
   width: 100%;
   height: 48px;
   border-radius: 8px;
-  border: 1px solid #cfd8dc;
-  background-color: #fff;
+  border: 1px solid var(--color15);
+  background-color: var(--white);
   margin: 20px 0;
 }
 
@@ -487,14 +498,6 @@ textarea {
   resize: none;
 }
 
-/* .contact-form input:hover {
-  border: 3px solid #cfd8dc;
-}
-
-.contact-form textarea:hover {
-  border: 3px solid #cfd8dc;
-} */
-
 .contact-form input:focus,
 .contact-form textarea:focus {
   border: 1px solid blueviolet;
@@ -502,26 +505,26 @@ textarea {
 
 .contact-btn {
   margin: auto;
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
-  color: #7f8cff;
+  color: var(--color4);
   font-weight: 500;
   padding: 0.7em 1em;
   border-radius: 0.5em;
-  border: 1px solid #7f8cff;
+  border: 1px solid var(--color4);
   float: left;
   letter-spacing: 0.51px;
   line-height: 24px;
 }
 
 .contact-btn:hover {
-  background: #6070ff;
-  color: #fff;
+  background: var(--color16);
+  color: var(--white);
 }
 
 .contact-btn:active {
-  background-color: #2230d2;
+  background-color: var(--color14);
 }
 
 #toolbar .navbar {
@@ -589,5 +592,50 @@ textarea {
     font-style: normal;
     line-height: 28px;
     margin: 15px 0;
+  }
+
+  /* card  */
+  .card-works {
+    border: 1px solid var(--color7);
+    border-radius: 24px;
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+
+  .card-works .card {
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--color7);
+  }
+
+  .card-works .card .card-description {
+    padding: 28px 30px;
+  }
+
+  .card-works .card .card-description .card-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card-works .card .card-description .subheading .canopy {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .card-works .card .card-description .subheading .subheading-list {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .card-works .card .card-description .card-content {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 0 6px 0;
+  }
+
+  .card-works .card .card-description .see-project {
+    margin: 18px 0;
   }
 }
