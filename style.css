@@ -63,7 +63,33 @@ ul {
   list-style-type: none;
 }
 
-.programming-lang li {
+.card-works .card .card-description .web-languages li,
+.card-works .card .card-description-1 .web-languages li,
+.card-works .card .card-description-2 .web-languages li,
+.card-works .card .card-description-3 .web-languages li {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  background-color: var(--color11);
+  padding: 4px 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+#headline ul li {
+  display: inline-flex;
+  padding: 0 4px;
+  margin: 10px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+}
+
+#toolbar nav ul li {
+  display: inline;
+}
+
+#about-myself .about-2 .programming-lang li {
   display: flex;
   align-items: center;
   background-color: var(--color9);
@@ -79,18 +105,6 @@ ul {
   padding: 10px;
 }
 
-.card-works .card .card-description .web-languages li,
-.card-works .card .card-description-1 .web-languages li,
-.card-works .card .card-description-2 .web-languages li,
-.card-works .card .card-description-3 .web-languages li {
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  background-color: var(--color11);
-  padding: 4px 12px;
-  border-radius: 8px;
-  margin: 10px 0;
-}
-
 .card-works .card .card-description-1 .web-languages li.ruby,
 .card-works .card .card-description-2 .web-languages li.ruby,
 .card-works .card .card-description-3 .web-languages li.ruby {
@@ -102,20 +116,6 @@ ul {
 .card-works .card .card-description-2 .web-languages li a,
 .card-works .card .card-description-3 .web-languages li a {
   text-decoration: none;
-}
-
-#headline ul li {
-  display: inline-flex;
-  padding: 0 4px;
-  margin: 10px 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 16px;
-}
-
-#toolbar nav ul li {
-  display: inline;
 }
 
 #toolbar nav ul li button {
@@ -424,7 +424,7 @@ ul {
   padding-bottom: 40%;
 }
 
-#about-myself h1 {
+#about-myself .about-1 h1 {
   color: var(--color2);
   font-size: 40px;
   font-family: "Poppins", sans-serif;
@@ -432,7 +432,7 @@ ul {
   line-height: 52px;
 }
 
-#about-myself p {
+#about-myself .about-1 p {
   color: var(--color3);
   line-height: 24px;
   font-size: 16px;
@@ -441,15 +441,15 @@ ul {
   margin: 10px 0;
 }
 
-#about-myself h3:hover {
+#about-myself .about-1 h3:hover {
   color: var(--primary-1);
 }
 
-#about-myself ul.social {
+#about-myself .about-1 ul.social {
   list-style-type: none;
 }
 
-#about-myself ul.social li {
+#about-myself .about-1 ul.social li {
   display: inline-flex;
   padding: 10px 8px;
   margin: 10px 0;
@@ -459,7 +459,7 @@ ul {
   font-size: 16px;
 }
 
-#about-myself .my-resume {
+#about-myself .about-1 .my-resume {
   border: 1px solid var(--primary-1);
   border-radius: 8px;
   background-color: var(--white);
@@ -474,26 +474,26 @@ ul {
   gap: 10px;
 }
 
-#about-myself .my-resume:hover {
+#about-myself .about-1 .my-resume:hover {
   color: var(--white);
   cursor: pointer;
   background-color: var(--primary-1);
 }
 
-#about-myself .my-resume:active {
+#about-myself .about-1 .my-resume:active {
   box-shadow: 2px 2px 5px var(--color14);
 }
 
-#about-myself .programming-lang {
+#about-myself .about-2 .programming-lang {
   list-style: none;
   padding-left: 0;
 }
 
-.web-lang {
+#about-myself .about-2 .web-lang {
   padding-left: 16px;
 }
 
-.list-title {
+#about-myself .about-2 .list-title {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -509,11 +509,11 @@ ul {
   padding-left: 0;
 }
 
-.list-separator {
+#about-myself .about-2 .list-separator {
   width: 100%;
 }
 
-.lists {
+#about-myself .about-2 .lists {
   display: flex;
   align-items: center;
   gap: 30vw;
@@ -525,7 +525,7 @@ ul {
   justify-content: space-around;
 }
 
-.lists h4 {
+#about-myself .about-2 .lists h4 {
   margin-right: 0;
   align-items: center;
   justify-content: flex-start;
@@ -540,6 +540,7 @@ ul {
   padding: 0;
 }
 
+/* contact  */
 #contact {
   background-color: var(--white);
 }
@@ -651,6 +652,18 @@ textarea {
   #toolbar nav ul.navbar {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  #about-myself .about-2 .programming-lang li {
+    width: 122px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #about-myself .about-1 ul.social li {
+    padding: 10px 10px;
+    margin: 10px 0;
   }
 
   #toolbar nav ul.navbar li:nth-of-type(2n),
@@ -879,5 +892,38 @@ textarea {
     color: var(--color17);
     cursor: pointer;
     background-color: var(--white);
+  }
+
+  /* about  */
+  #about-myself {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 160px;
+    padding-left: 143px;
+    padding-right: 142px;
+    padding-bottom: 190px;
+  }
+
+  #about-myself .about-1 {
+    width: 40%;
+  }
+
+  #about-myself .about-1 p {
+    color: var(--color3);
+    font-size: 15px;
+    line-height: 24px;
+    margin: 10px 0;
+  }
+
+  #about-myself .about-2 {
+    width: 60%;
+  }
+
+  #about-myself .about-2 .web-lang {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left: 16px;
   }
 }
