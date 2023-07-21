@@ -285,6 +285,14 @@ ul {
   line-height: 44px;
 }
 
+.card-works .card .card-description-2 .card-title::before {
+  content: 'tonic';
+}
+
+.card-works .card .card-description-3 .card-title::before {
+  content: 'multi-post stories';
+}
+
 .card-works .card .card-description .subheading,
 .card-works .card .card-description-1 .subheading,
 .card-works .card .card-description-2 .subheading,
@@ -307,7 +315,9 @@ ul {
   text-transform: uppercase;
 }
 
-.card-works .card .card-description-1 .subheading .canopy::before {
+.card-works .card .card-description-1 .subheading .canopy::before,
+.card-works .card .card-description-2 .subheading .canopy::before,
+.card-works .card .card-description-3 .subheading .canopy::before {
   content: 'canopy';
 }
 
@@ -327,8 +337,14 @@ ul {
   text-transform: capitalize;
 }
 
-.card-works .card .card-description-1 .subheading .subheading-list::before {
+.card-works .card .card-description-1 .subheading .subheading-list::before,
+.card-works .card .card-description-2 .subheading .subheading-list::before,
+.card-works .card .card-description-3 .subheading .subheading-list::before {
   content: 'back end dev';
+}
+
+.card-works .card .card-description-3 .subheading .subheading-list-date::before {
+  content: '2015';
 }
 
 .card-works .card .card-description .card-content,
@@ -343,7 +359,9 @@ ul {
   line-height: 24px;
 }
 
-.card-works .card .card-description-1 .card-content p::before {
+.card-works .card .card-description-1 .card-content p::before,
+.card-works .card .card-description-2 .card-content p::before,
+.card-works .card .card-description-3 .card-content p::before {
   content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
 }
 
