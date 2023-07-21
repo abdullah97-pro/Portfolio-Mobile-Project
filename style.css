@@ -931,6 +931,7 @@ textarea {
   #contact {
     width: 100%;
   }
+
   .contact-bg-form {
     width: 100%;
     background-image: url('./Icons/desktop/contact form background shapes.svg');
@@ -943,6 +944,7 @@ textarea {
     padding-bottom: 50px;
     text-align: center;
   }
+
   .contact-form {
     width: 50%;
     margin: auto;
