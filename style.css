@@ -20,6 +20,8 @@
   --color14: #2230d2;
   --color15: #cfd8dc;
   --color16: #6070ff;
+  --color17: #4053fc;
+  --color18: #6b7780;
 }
 
 * {
@@ -88,7 +90,9 @@ ul {
   margin: 10px 0;
 }
 
-.card-works .card .card-description-1 .web-languages li.ruby {
+.card-works .card .card-description .web-languages li.ruby,
+.card-works .card .card-description-1 .web-languages li.ruby,
+.card-works .card .card-description-3 .web-languages li.ruby {
   display: none;
 }
 
@@ -305,7 +309,7 @@ ul {
 .card-works .card .card-description .subheading .subheading-list,
 .card-works .card .card-description-1 .subheading .subheading-list,
 .card-works .card .card-description-3 .subheading .subheading-list {
-  color: var(--color5);
+  color: var(--color18);
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -342,6 +346,7 @@ ul {
 }
 
 .card-works .card .card-description .see-project,
+.card-works .card .card-description .see-project-2,
 .card-works .card .card-description-1 .see-project,
 .card-works .card .card-description-3 .see-project {
   display: flex;
@@ -361,6 +366,7 @@ ul {
 }
 
 .card-works .card .card-description .see-project:hover,
+.card-works .card .card-description .see-project-2:hover,
 .card-works .card .card-description-1 .see-project:hover,
 .card-works .card .card-description-3 .see-project:hover {
   color: var(--white);
@@ -685,6 +691,23 @@ textarea {
     order: 2;
   }
 
+  .card-works .card .img-2 {
+    width: 47%;
+    height: 448px;
+    background-image: url('./Icons/desktop/3 Snapshoot Portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-works .card .img-3 {
+    width: 47%;
+    height: 448px;
+    background-image: url('./Icons/desktop/4 Snapshoot Portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 2;
+  }
+
   .card-works .card .card-description,
   .card-works .card .card-description-1,
   .card-works .card .card-description-3 {
@@ -723,15 +746,43 @@ textarea {
     color: var(--color3);
   }
 
-  .card-works .card .card-description .web-languages {
+  .card-works .card .card-description .web-languages,
+  .card-works .card .card-description-1 .web-languages,
+  .card-works .card .card-description-3 .web-languages {
     text-transform: lowercase;
   }
 
-  .card-works .card .card-description-1 .web-languages li.ruby {
+  .card-works .card .card-description .web-languages li.ruby,
+  .card-works .card .card-description-1 .web-languages li.ruby,
+  .card-works .card .card-description-3 .web-languages li.ruby {
     display: block;
   }
 
-  .card-works .card .card-description .see-project {
+  .card-works .card .card-description .see-project-2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-1);
+    border-radius: 8px;
+    background-color: var(--color17);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 12px;
+    gap: 10px;
+    letter-spacing: 0.51px;
+  }
+
+  .card-works .card .card-description .see-project,
+  .card-works .card .card-description .see-project-2 {
     margin: 8px 0;
+  }
+
+  .card-works .card .card-description .see-project-2:hover {
+    color: var(--color17);
+    cursor: pointer;
+    background-color: var(--white);
   }
 }
