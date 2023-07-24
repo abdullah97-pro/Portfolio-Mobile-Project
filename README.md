@@ -79,7 +79,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://abdullah97-pro.github.io/Portfolio-Mobile/) 
+- [Live Demo Link](https://abdullah97-pro.github.io/Portfolio-Mobile-Project/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
