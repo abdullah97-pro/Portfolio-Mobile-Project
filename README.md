@@ -102,7 +102,7 @@ Clone this repository to your desired folder using:
 
 ```sh
   cd my-folder
-  git https://github.com/abdullah97-pro/Portfolio-Mobile-Project
+  git https://github.com/abdullah97-pro/Portfolio-Mobile-Project/tree/addDeploymentProject
 ```
 <!-- INSTALL -->
 
