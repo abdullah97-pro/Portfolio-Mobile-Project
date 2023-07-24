@@ -79,7 +79,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://abdullah97-pro.github.io/Portfolio-Mobile/) 
+- [Live Demo Link](https://abdullah97-pro.github.io/Portfolio-Mobile-Project/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Clone this repository to your desired folder using:
 
 ```sh
   cd my-folder
-  git https://github.com/abdullah97-pro/Portfolio-Mobile-Project
+  git https://github.com/abdullah97-pro/Portfolio-Mobile-Project/tree/addDeploymentProject
 ```
 <!-- INSTALL -->
 
