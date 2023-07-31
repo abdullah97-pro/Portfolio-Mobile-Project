@@ -671,11 +671,11 @@ textarea {
   opacity: 0.5;
 } */
 
-/* #toolbar .active {
+ #toolbar .active {
   display: flex;
   flex-direction: column;
   z-index: 100;
-} */
+} 
 
 /* desktop versions */
 @media only screen and (min-width: 768px) {
