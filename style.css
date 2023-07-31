@@ -661,6 +661,22 @@ textarea {
   display: none;
 }
 
+/* #toolbar nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  background-color: #2230d2;
+  opacity: 0.5;
+} */
+
+/* #toolbar .active {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+} */
+
 /* desktop versions */
 @media only screen and (min-width: 768px) {
   #toolbar {
@@ -669,6 +685,10 @@ textarea {
     align-items: flex-start;
     padding: 30px 143px;
     gap: 720px;
+  }
+
+  #toolbar nav {
+    background-color: transparent;
   }
 
   #toolbar nav .menu-icon {
