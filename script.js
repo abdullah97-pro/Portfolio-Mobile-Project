@@ -1,12 +1,12 @@
 function show() {
-  let x = document.getElementById('menubar');
+  const x = document.getElementById('menubar');
   if (x.style.display === 'block') {
     x.style.display = 'none';
+  } else if (x.className === 'navbar') {
+    x.className += ' active';
   } else {
-    if (x.className === 'navbar') {
-      x.className += ' active';
-    } else {
-      x.className = 'navbar';
-    }
+    x.className = 'navbar';
   }
 }
+
+show();
