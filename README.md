@@ -39,11 +39,12 @@
 <!-- INTRO -->
 # 📖 Portfolio Mobile Project<a name="about-project"></a>
 
-> Here is a Portfolio mobile project showcasing all my Abilities, Skills and Achievements.it has four huge sections (the toolbar, headline, work and about) which is developed by flex and grid, it has mobile version and program used HTML and CSS also configured the (Linters) ability for error detecting and formatting the codes.
+> Here is a Portfolio mobile project showcasing all my Abilities, Skills and Achievements.it has four huge sections (the toolbar, responsive, script, work, contact and about) which is developed by flex and grid, it has mobile version and program used HTML5, CSS3 and JavaScript also configured the (Linters) ability for error detecting and formatting the codes.
 
 ## 🛠 Built With <a name="built-with"></a>
-1. HTML
-2. CSS
+1. HTML5
+2. CSS3
+3. JavaScript
 3. Linters
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -55,6 +56,7 @@
   <ul>
     <li><a href="https://reactjs.org/">HTML</a></li>
     <li><a href="https://reactjs.org/">CSS</a></li>
+    <li><a href="https://reactjs.org/">JavaScript</a></li>
     <li><a href="https://reactjs.org/">Linters</a></li>
   </ul>
 </details>
@@ -66,10 +68,13 @@
 > - Added Linters
 > - Added HTML
 > - Added CSS
+> - Added JavaScript
 > - Added Multiple Image Background
 > - Added Image Background
 > - Added Hover
 > - Added Toolbar
+> - Added Responsive
+> - Added Mobile Version
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +84,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://abdullah97-pro.github.io/Portfolio-Mobile/) 
+- [Live Demo Link](https://abdullah97-pro.github.io/Portfolio-Mobile-Project/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +107,7 @@ Clone this repository to your desired folder using:
 
 ```sh
   cd my-folder
-  git https://github.com/abdullah97-pro/Portfolio-Mobile-Project
+  git https://github.com/abdullah97-pro/Portfolio-Mobile-Project/tree/addmobilemenu
 ```
 <!-- INSTALL -->
 
@@ -179,7 +184,7 @@ Contributions, issues, and feature requests are welcome!
 
 - **What new features should be expected in the next release of the project?**
 
-  - In a short period **Form**. will be added
+  - In a short period **some**. new section will be added
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
