@@ -39,7 +39,7 @@ textarea {
 }
 
 #toolbar {
-  /* display: flex; */
+  width: 100%;
   justify-content: space-between;
   padding: 30px;
   background-color: var(--white);
@@ -85,9 +85,9 @@ ul {
   font-size: 16px;
 }
 
-#toolbar nav ul li {
+/* #toolbar nav ul li {
   display: inline;
-}
+} */
 
 #about-myself .about-2 .programming-lang li {
   display: flex;
@@ -133,6 +133,14 @@ ul {
   font-style: normal;
   text-align: center;
   line-height: 20px;
+}
+
+#toolbar .active li a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 60px;
+  padding-left: 30px;
 }
 
 #headline ul li a:last-child {
@@ -661,20 +669,27 @@ textarea {
   display: none;
 }
 
-/* #toolbar nav {
+#toolbar .active {
+  display: block;
+  background-color: var(--color16);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 75vh;
-  background-color: #2230d2;
-  opacity: 0.5;
-} */
+  height: 100vh;
+  padding-top: 30px;
+}
 
-#toolbar .active {
-  display: flex;
-  flex-direction: column;
-  z-index: 100;
+#toolbar nav ul.active li:first-of-type {
+  padding-top: 30px;
+}
+
+.close {
+  float: right;
+  margin-right: 30px;
+  color: var(--white);
+  font-size: 32px;
+  cursor: pointer;
 }
 
 /* desktop versions */
@@ -698,6 +713,12 @@ textarea {
   #toolbar nav ul.navbar {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  #toolbar nav ul.active li {
+    display: flex;
+    padding: 0 20px;
+    font-weight: 600;
   }
 
   #about-myself .about-2 .programming-lang li {
