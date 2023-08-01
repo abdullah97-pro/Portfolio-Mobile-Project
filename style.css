@@ -671,7 +671,7 @@ textarea {
 
 #toolbar .active {
   display: block;
-  background-color: var(--color16);
+  background-color: rgba(96, 112, 255, 0.9);
   position: fixed;
   top: 0;
   left: 0;
@@ -699,7 +699,7 @@ textarea {
     justify-content: center;
     align-items: flex-start;
     padding: 30px 143px;
-    gap: 720px;
+    gap: 670px;
   }
 
   #toolbar nav {
