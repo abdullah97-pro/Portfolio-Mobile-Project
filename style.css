@@ -676,6 +676,7 @@ textarea {
   width: 100%;
   height: 100vh;
   padding-top: 30px;
+  backdrop-filter: blur(5px);
 }
 
 #toolbar nav ul.active li:first-of-type {
@@ -1037,5 +1038,9 @@ textarea {
 
   .contact-btn {
     margin: 12px auto;
+  }
+
+  .close {
+    display: none;
   }
 }
