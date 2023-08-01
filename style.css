@@ -223,8 +223,7 @@ ul {
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(1, 1fr);/* grid-template-columns: repeat(1fr); */
   margin-top: 120px;
   gap: 50px;
   padding: 20px;
@@ -563,8 +562,7 @@ ul {
   margin-right: 0;
   align-items: center;
   justify-content: flex-start;
-  max-width: 60vw;
-  padding: auto;
+  max-width: 60vw;/* padding: auto; */
   width: 100px;
   right: 80px !important;
 }

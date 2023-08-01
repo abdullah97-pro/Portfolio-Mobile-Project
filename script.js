@@ -1,15 +1,12 @@
-function show(){
-    var x = document.getElementById('menubar');
-
-    if(x.style.display == 'block'){
-        x.style.display = 'none';
+function show() {
+  let x = document.getElementById('menubar');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    if (x.className === 'navbar') {
+      x.className += ' active';
+    } else {
+      x.className = 'navbar';
     }
-    else{
-        if(x.className == 'navbar'){
-            x.className += ' active';
-        }
-        else {
-            x.className = 'navbar';
-        }
-    }
-};
+  }
+}
