@@ -1,4 +1,15 @@
-   function show(){
-    let a = document.getElementById("menubar");
-    a.classList.toggle("active");
+function show(){
+    var x = document.getElementById('menubar');
+
+    if(x.style.display == 'block'){
+        x.style.display = 'none';
+    }
+    else{
+        if(x.className == 'navbar'){
+            x.className += ' active';
+        }
+        else {
+            x.className = 'navbar';
+        }
+    }
 };
