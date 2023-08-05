@@ -5,23 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+      integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
   </head>
   <body>
-    <header id="toolbar">
-      <nav>
-        <ul>
-          <li><a href="/">my logo</a></li>
-          <li>
-            <button type="button">
-              <img src="./Icons/Icon - Menu.svg" alt="" />
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <section id="header-section">
+      <header id="toolbar">
+        <nav>
+          <ul class="nav">
+            <li><a href="/">my logo</a></li>
+            <li class="menu-icon">
+              <button type="button" onclick="show()">
+                <img src="./Icons/Icon - Menu.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </nav>
 
-    <main>
-      <section id="headline">
+        <nav>
+          <ul class="navbar" id="menubar">
+          <span class="close" id="close" onclick="hide()"><i class="fa fa-close"></i></span>
+            <!-- <li><a href="/" class="close" onclick="hide()"><i class="fa fa-close"></i></a></li> -->
+            <li><a href="#headline" onclick="hide()">portfolio</a></li>
+            <li><a href="#about-myself" onclick="hide()">about</a></li>
+            <li><a href="#contact" onclick="hide()">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <section id="headline">
+      <div class="heading-section">
         <h1>I’m Abdullah. Glad to see you!</h1>
         <p>
           I’m a software developer! I can help you build a product , feature or
@@ -59,122 +87,16 @@
             /></a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="card-works">
-        <div class="card">
-          <img src="./Icons/Snapshoot Portfolio.png" alt="" />
-          <div class="card-description">
-            <h2 class="card-title">tonic</h2>
-            <div class="subheading">
-              <span class="canopy">canopy</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">back end dev</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">2015</span>
-            </div>
-            <div class="card-content">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </div>
-            <ul class="web-languages">
-              <li><a href="/">html</a></li>
-              <li><a href="/">css</a></li>
-              <li><a href="/">javascript</a></li>
-            </ul>
-            <button class="see-project">See project</button>
-          </div>
-        </div>
-      </section>
+    <section class="card-works"></section>
 
-      <section class="card-works">
-        <div class="card">
-          <img src="./Icons/Snapshoot Portfolio (1).png" alt="" />
-          <div class="card-description">
-            <h2 class="card-title">Multi-Post Stories</h2>
-            <div class="subheading">
-              <span class="canopy">canopy</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">back end dev</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">2015</span>
-            </div>
-            <div class="card-content">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </div>
-            <ul class="web-languages">
-              <li><a href="/">html</a></li>
-              <li><a href="/">css</a></li>
-              <li><a href="/">javascript</a></li>
-            </ul>
-            <button class="see-project">See project</button>
-          </div>
-        </div>
-      </section>
+    <section class="project-detail hidden" id="popup"></section>
 
-      <section class="card-works">
-        <div class="card">
-          <img src="./Icons/Snapshoot Portfolio (2).png" alt="" />
-          <div class="card-description">
-            <h2 class="card-title">tonic</h2>
-            <div class="subheading">
-              <span class="canopy">canopy</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">back end dev</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">2015</span>
-            </div>
-            <div class="card-content">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </div>
-            <ul class="web-languages">
-              <li><a href="/">html</a></li>
-              <li><a href="/">css</a></li>
-              <li><a href="/">javascript</a></li>
-            </ul>
-            <button class="see-project">See project</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="card-works">
-        <div class="card">
-          <img src="./Icons/Snapshoot Portfolio (3).png" alt="" />
-          <div class="card-description">
-            <h2 class="card-title">Multi-Post Stories</h2>
-            <div class="subheading">
-              <span class="canopy">canopy</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">back end dev</span>
-              <img src="./Icons/Counter.png" alt="" />
-              <span class="subheading-list">2015</span>
-            </div>
-            <div class="card-content">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </div>
-            <ul class="web-languages">
-              <li><a href="/">html</a></li>
-              <li><a href="/">css</a></li>
-              <li><a href="/">javascript</a></li>
-            </ul>
-            <button class="see-project">See project</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- about myself -->
-      <section id="about-myself">
+    <!-- about myself -->
+    <section id="about-myself">
+      <div class="about-1">
         <h1>About Myself</h1>
         <p>
           Hello I’m a software developer! I can help you build a product ,
@@ -206,59 +128,113 @@
           </li>
           <li>
             <a href="/"
-              ><img src="./Icons/social/Vector-1.svg" alt="medium logo"
-            /></a>
+              ><img src="./Icons/social/Vector-1.svg" alt="medium logo" />
+            </a>
           </li>
         </ul>
-        
-        <button class="my-resume" type="button">Get my resume</button>
 
+        <button class="my-resume" type="button">Get my resume</button>
+      </div>
+
+      <div class="about-2">
         <ul id="aboutme-list">
-            <li class="list-title">
-                <ul class="lists">
-                    <li><h4>Languages</h4></li>
-                    <li>
-                        <img src="./Icons/Icon - Chevron - Down - Larger.svg" alt="">
-                    </li>
-                </ul>
-            </li>
-            <li class="programming-lang">
-                <ul class="web-lang">
-                    <li>
-                        <img src="./Icons/Ellipse 1.png" alt="js icon"> JavaScript
-                    </li>
-                    <li>
-                        <img src="./Icons/Ellipse 1 (1).png" alt="html icon"> HTML
-                    </li>
-                    <li>
-                        <img src="./Icons/Ellipse 1 (2).png" alt="css icon"> CSS
-                    </li>
-                </ul>
-            </li>
-            <li class="list-title">
-                <ul class="lists">
-                    <li><h4>Frameworks</h4></li>
-                    <li>
-                        <img src="./Icons/Icon - Chevron - Right - Larger.svg" alt="">
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <img class="list-separator" src="./Icons/Separator Bottom.svg" alt="">
-            </li>
-            <li class="list-title">
-                <ul class="lists">
-                    <li><h4>Skills</h4></li>
-                    <li>
-                        <img src="./Icons/Icon - Chevron - Right - Larger.svg" alt="">
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <img src="./Icons/Separator Bottom.svg" alt="" class="list-separator">
-            </li>
+          <li class="list-title">
+            <ul class="lists">
+              <li><h4>Languages</h4></li>
+              <li>
+                <img src="./Icons/Icon - Chevron - Down - Larger.svg" alt="" />
+              </li>
+            </ul>
+          </li>
+          <li class="programming-lang">
+            <ul class="web-lang">
+              <li>
+                <img src="./Icons/Ellipse 1.png" alt="js icon" /> JavaScript
+              </li>
+              <li>
+                <img src="./Icons/Ellipse 1 (1).png" alt="html icon" /> HTML
+              </li>
+              <li>
+                <img src="./Icons/Ellipse 1 (2).png" alt="css icon" /> CSS
+              </li>
+            </ul>
+          </li>
+          <li class="list-title">
+            <ul class="lists">
+              <li><h4>Frameworks</h4></li>
+              <li>
+                <img src="./Icons/Icon - Chevron - Right - Larger.svg" alt="" />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img class="list-separator" src="./Icons/Separator Bottom.svg" alt="" />
+          </li>
+          <li class="list-title">
+            <ul class="lists">
+              <li><h4>Skills</h4></li>
+              <li>
+                <img src="./Icons/Icon - Chevron - Right - Larger.svg" alt="" />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img
+              src="./Icons/Separator Bottom.svg"
+              alt=""
+              class="list-separator"
+            />
+          </li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact">
+      <div class="contact-bg-form">
+        <div class="contact-form">
+          <h1>Contact me</h1>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it!
+          </p>
+          <form action="https://formspree.io/f/xqkvalkp" method="post" id="contact-form">
+            <div class="inputs">
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Abdullah Ahmadi"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="abdullahahmadi019@gmail.com"
+                required
+              />
+            </div>
+            <div class="inputs-msg">
+              <textarea
+                name="msg"
+                id="msg"
+                placeholder="Write your message here..."
+                maxlength="500"
+                required
+              ></textarea>
+            </div>
+            <div id="error-message"></div>
+            <button type="submit" onclick="showPopup()" class="contact-btn">Get in touch</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+
   </body>
 </html>
