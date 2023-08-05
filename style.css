@@ -345,6 +345,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding: 5px;
 }
 
 .details .subheading .canopy,
@@ -1176,6 +1177,7 @@ textarea {
   .project-detail .details {
     width: 85%;
     height: auto;
+    padding: 30px;
     margin-top: 40px;
   }
 
