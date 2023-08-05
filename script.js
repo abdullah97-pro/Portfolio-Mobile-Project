@@ -23,6 +23,7 @@ const workdata = [
     subheadlist1: 'back end dev',
     subheadlist2: 2015,
     des1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -36,6 +37,7 @@ const workdata = [
     subheadlist1: 'full stack dev',
     subheadlist2: 2015,
     des1: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -49,6 +51,7 @@ const workdata = [
     subheadlist1: 'full stack dev',
     subheadlist2: 2015,
     des1: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -62,6 +65,7 @@ const workdata = [
     subheadlist1: 'lead developer',
     subheadlist2: 2018,
     des1: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
     liveLink: '',
     sourceLink: '',
@@ -124,7 +128,7 @@ if (seeProjectButtons) {
       <img class="detail-img" src="./Icons/desktop/${workArray.imageName}" alt="">
       <div class="details-content">
         <p class="description">
-        ${workArray.des1}
+        ${workArray.des2}
         </p>
         <div class="details-right">
           <ul class="web-languages">
