@@ -345,7 +345,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 5px;
 }
 
 .details .subheading .canopy,
@@ -798,6 +797,11 @@ textarea {
   display: none;
 }
 
+#error-message {
+  display: none;
+  color: red;
+}
+
 /* desktop versions */
 @media only screen and (min-width: 768px) {
   #toolbar {
@@ -1177,7 +1181,6 @@ textarea {
   .project-detail .details {
     width: 85%;
     height: auto;
-    padding: 30px;
     margin-top: 40px;
   }
 
