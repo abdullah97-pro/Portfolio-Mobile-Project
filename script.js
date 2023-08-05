@@ -228,17 +228,17 @@ function showPopup() {
     localStorage.setItem('formData', JSON.stringify(formData));
   });
   
-  // form.addEventListener('submit', function(event) {
-  //   event.preventDefault();
+   form.addEventListener('submit', function(event) {
+     event.preventDefault();
   
-  //   const email = emailInput.value;
+     const email = emailInput.value;
   
-    // if (email.toLowerCase() === email) {
-    //   form.submit();
-    // } else {
-    //   errorMessage.textContent = 'Please enter the email address in lowercase.';
-    //   errorMessage.style.display = 'block';
-    // }
-  // });
+     if (email.toLowerCase() === email) {
+       form.submit();
+     } else {
+       errorMessage.textContent = 'Please enter the email address in lowercase.';
+       errorMessage.style.display = 'block';
+     }
+  });
 }
 showPopup();
