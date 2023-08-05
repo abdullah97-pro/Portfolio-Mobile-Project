@@ -177,49 +177,48 @@ function showPopup() {
   const emailInput = form.querySelector('input[name="email"]');
   const errorMessage = document.getElementById('error-message');
 
-  // Retrieve the saved form data from localStorage on page load
-document.addEventListener('DOMContentLoaded', () => {
-  const savedFormData = localStorage.getItem('formData');
-  if (savedFormData) {
-    const parsedFormData = JSON.parse(savedFormData);
-    form.firstname.value = parsedFormData.firstname;
-    form.email.value = parsedFormData.email;
-    form.msg.value = parsedFormData.msg;
-  }
-});
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedFormData = localStorage.getItem('formData');
+    if (savedFormData) {
+      const parsedFormData = JSON.parse(savedFormData);
+      form.firstname.value = parsedFormData.firstname;
+      emailInput.email.value = parsedFormData.emailInput;
+      form.msg.value = parsedFormData.msg;
+    }
+  });
 
-form.addEventListener('change', () => {
-  const formData = {
-    firstname: form.firstname.value,
-    email: form.email.value,
-    msg: form.msg.value,
-  };
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
+  form.addEventListener('change', () => {
+    const formData = {
+      firstname: form.firstname.value,
+      email: form.email.value,
+      msg: form.msg.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-  const formData = {
-    firstname: form.firstname.value,
-    email: form.email.value,
-    msg: form.msg.value,
-  };
-  localStorage.setItem('formData', JSON.stringify(formData));
+    const formData = {
+      firstname: form.firstname.value,
+      email: form.email.value,
+      msg: form.msg.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
 
-  const email = formData.email;
+    const { email } = formData;
 
-  if (email.toLowerCase() === email) {
-    form.submit();
-  } else {
-    errorMessage.textContent = 'Please enter the email address in lowercase.';
-    errorMessage.style.display = 'block';
+    if (email.toLowerCase() === email) {
+      form.submit();
+    } else {
+      errorMessage.textContent = 'Please enter the email address in lowercase.';
+      errorMessage.style.display = 'block';
 
-    // Set a timer to hide the error message after 3 seconds
-    setTimeout(() => {
-      errorMessage.style.display = 'none';
-    }, 3000);
-  }
-});
+      // Set a timer to hide the error message after 3 seconds
+      setTimeout(() => {
+        errorMessage.style.display = 'none';
+      }, 3000);
+    }
+  });
 }
 showPopup();
