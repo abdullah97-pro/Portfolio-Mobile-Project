@@ -63,6 +63,7 @@ ul {
   list-style-type: none;
 }
 
+.details .web-languages li,
 .card-works .card .card-description .web-languages li,
 .card-works .card .card-description-1 .web-languages li,
 .card-works .card .card-description-2 .web-languages li,
@@ -111,11 +112,13 @@ ul {
   display: none;
 }
 
+.details .web-languages li a,
 .card-works .card .card-description .web-languages li a,
 .card-works .card .card-description-1 .web-languages li a,
 .card-works .card .card-description-2 .web-languages li a,
 .card-works .card .card-description-3 .web-languages li a {
   text-decoration: none;
+  color: var(--color16);
 }
 
 #toolbar nav ul li button {
@@ -308,6 +311,7 @@ ul {
   content: 'multi-post stories';
 }
 
+.details .subheading,
 .card-works .card .card-description .subheading,
 .card-works .card .card-description-1 .subheading,
 .card-works .card .card-description-2 .subheading,
@@ -317,6 +321,7 @@ ul {
   gap: 12px;
 }
 
+.details .subheading .canopy,
 .card-works .card .card-description .subheading .canopy,
 .card-works .card .card-description-1 .subheading .canopy,
 .card-works .card .card-description-2 .subheading .canopy,
@@ -336,6 +341,7 @@ ul {
   content: 'canopy';
 }
 
+.details .subheading .subheading-list,
 .card-works .card .card-description .subheading .subheading-list,
 .card-works .card .card-description-1 .subheading .subheading-list,
 .card-works .card .card-description-1 .subheading .subheading-list-date,
@@ -380,6 +386,7 @@ ul {
   content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
 }
 
+.details .web-languages,
 .card-works .card .card-description .web-languages,
 .card-works .card .card-description-1 .web-languages,
 .card-works .card .card-description-2 .web-languages,
@@ -698,6 +705,96 @@ textarea {
   color: var(--white);
   font-size: 32px;
   cursor: pointer;
+}
+
+.project-detail {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(226, 219, 219, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.project-detail .details {
+  width: 90%;
+  height: 90vh;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.details h1.details-title {
+  display: inline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: capitalize;
+  color: var(--color2);
+}
+
+.details .closePopup {
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #67798b;
+}
+
+.details p.description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color3);
+}
+
+.details .details-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.details .details-links a {
+  width: 45%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.details .details-links a button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px 18px;
+  background-color: transparent;
+  border: 1px solid var(--color16);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color13);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 /* desktop versions */
@@ -1058,5 +1155,54 @@ textarea {
 
   .close {
     display: none;
+  }
+
+  .project-detail {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(226, 219, 219, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+  }
+
+  .project-detail .details {
+    width: 85%;
+    height: auto;
+  }
+
+  .details .close {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #67798b;
+    display: block;
+  }
+
+  .details .detail-img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .details .details-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .details-content .description {
+    width: 65%;
+  }
+
+  .details-right .details-links a {
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .details-right .details-links a button {
+    font-size: 12px;
   }
 }

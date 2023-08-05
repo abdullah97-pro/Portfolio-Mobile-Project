@@ -70,7 +70,6 @@ const workdata = [
 
 const workContainer = document.querySelector('.card-works');
 let workHTML = '';
-// const img1 = document.querySelector('.img')
 
 workdata.forEach((data) => {
   workHTML += `
@@ -82,7 +81,7 @@ workdata.forEach((data) => {
             <span class="canopy">${data.canopy}</span>
             <img src="./Icons/${data.counter}" alt="" />
             <span class="subheading-list">${data.subheadlist1}</span>
-            <img src="./Icons/Counter.png" alt="" />
+            <img src="./Icons/${data.counter}" alt="" />
             <span class="subheading-list">${data.subheadlist2}</span>
           </div>
           <div class="card-content">
@@ -94,7 +93,7 @@ workdata.forEach((data) => {
             ${data.languages.map((lang) => `<li><a href="/">${lang}</a></li>`).join('')
 }
           </ul>
-          <button class="see-project" data-work-array='${JSON.stringify(data)}'>See project</button>
+          <button class="see-project" type="button" onclick="remove()" data-work-array='${JSON.stringify(data)}'>See project</button>
         </div>
       </div>
       
@@ -103,8 +102,65 @@ workdata.forEach((data) => {
 
 workContainer.innerHTML = workHTML;
 
+const seeProjectButtons = document.querySelectorAll('[data-work-array]');
+if (seeProjectButtons) {
+  const modal = document.querySelector('.project-detail');
+  seeProjectButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const workArray = JSON.parse(button.getAttribute('data-work-array'));
+      // console.log(workArray);
+      const modalHtml = ` <div class="details">
+      <div class="details-header">
+      <h1 class="details-title">${workArray.title}</h1>
+      <span class="closePopup"><i class="fa fa-close"></i></span>
+      </div>
+      <div class="subheading">
+        <span class="canopy">${workArray.canopy}</span>
+        <img src="./Icons/${workArray.counter}" alt="" />
+        <span class="subheading-list">${workArray.subheadlist1}</span>
+        <img src="./Icons/${workArray.counter}" alt="" />
+        <span class="subheading-list">${workArray.subheadlist2}</span>
+      </div>
+      <img class="detail-img" src="./Icons/desktop/${workArray.imageName}" alt="">
+      <div class="details-content">
+        <p class="description">
+        ${workArray.des1}
+        </p>
+        <div class="details-right">
+          <ul class="web-languages">
+          ${workArray.languages.map((lang) => `<li><a href="/">${lang}</a></li>`).join('')
+}
+          </ul>
+          <div class="details-links">
+            <a href="${workArray.liveLink}">
+              <button>
+                <p>See live</p> <img src="./Icons/social/Icon - Export.svg" alt="">
+              </button>
+            </a>
+            <a href="${workArray.sourceLink}">
+              <button>
+                <p>See source</p> <img src="./Icons/social/Frame.svg" alt="">
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>`;
+
+      modal.classList.remove('hidden');
+      modal.innerHTML = modalHtml;
+
+      const closePopup = document.querySelector('.closePopup');
+      closePopup.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+    });
+  });
+}
+
 const showbtn = document.querySelector('.active');
 const hidebtn = document.querySelector('.navbar');
+const popup = document.querySelector('.project-detail');
 
 const x = document.getElementById('menubar');
 const show = () => {
@@ -115,5 +171,10 @@ const hide = () => {
   x.classList = 'navbar';
 };
 
+const remove = () => {
+  popup.classList.remove('hidden');
+};
+
 showbtn.addEventListener('click', show);
 hidebtn.addEventListener('click', hide);
+popup.addEventListener('click', remove);
