@@ -3,11 +3,25 @@
 :root {
   --background-main: #f0f2f5;
   --white: #fff;
+  --black: #000;
   --primary-1: #6070ff;
   --color2: #172b4d;
   --color3: #344563;
   --color4: #7f8cff;
-  --color5: #7A869A;
+  --color5: #7a869a;
+  --color6: #ebebff;
+  --color7: #dfe1e6;
+  --color8: #f4f5f7;
+  --color9: #f7f7f9;
+  --color10: #253858;
+  --color11: #ebebff;
+  --color12: #e7e7e7;
+  --color13: #396df2;
+  --color14: #2230d2;
+  --color15: #cfd8dc;
+  --color16: #6070ff;
+  --color17: #4053fc;
+  --color18: #6b7780;
 }
 
 * {
@@ -16,15 +30,16 @@
   box-sizing: border-box;
 }
 
-main {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--background-main);
-  overflow: auto;
+body {
+  background-color: var(--color8);
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
 }
 
 #toolbar {
-  display: flex;
+  width: 100%;
   justify-content: space-between;
   padding: 30px;
   background-color: var(--white);
@@ -34,14 +49,102 @@ main {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
+#headline ul {
+  list-style-type: none;
+}
+
 #toolbar nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
-#toolbar nav ul li {
+.details .details-links a {
+  width: 45%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.details .web-languages li,
+.card-works .card .card-description .web-languages li,
+.card-works .card .card-description-1 .web-languages li,
+.card-works .card .card-description-2 .web-languages li,
+.card-works .card .card-description-3 .web-languages li {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  background-color: var(--color11);
+  padding: 4px 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+#headline ul li {
+  display: inline-flex;
+  padding: 0 4px;
+  margin: 10px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+}
+
+/* #toolbar nav ul li {
   display: inline;
+} */
+
+#about-myself .about-2 .programming-lang li {
+  display: flex;
+  align-items: center;
+  background-color: var(--color9);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color10);
+  margin: 16px 20px 16px 0;
+  gap: 16px;
+  padding: 10px;
+}
+
+.card-works .card .card-description-1 .web-languages li.ruby,
+.card-works .card .card-description-2 .web-languages li.ruby,
+.card-works .card .card-description-3 .web-languages li.ruby {
+  display: none;
+}
+
+.details .web-languages li a,
+.card-works .card .card-description .web-languages li a,
+.card-works .card .card-description-1 .web-languages li a,
+.card-works .card .card-description-2 .web-languages li a,
+.card-works .card .card-description-3 .web-languages li a {
+  text-decoration: none;
+  color: var(--color16);
+}
+
+.details .details-links a button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 18px;
+  background-color: transparent;
+  border: 1px solid var(--color16);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color13);
+  text-align: center;
+  cursor: pointer;
 }
 
 #toolbar nav ul li button {
@@ -55,11 +158,26 @@ main {
   text-transform: capitalize;
   color: var(--primary-1);
   font-size: 18px;
-  font-weight: 900;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   text-align: center;
   line-height: 20px;
+}
+
+#toolbar .active li a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 60px;
+  padding-left: 30px;
+}
+
+#headline ul li a:last-child {
+  padding-left: 0;
+}
+
+#toolbar nav ul.nav li a {
+  font-weight: 900;
 }
 
 #headline {
@@ -75,12 +193,25 @@ main {
   border-radius: 0 0 0 80px;
 }
 
+.contact-form h1 {
+  color: var(--white);
+  font-size: 42px;
+}
+
 #headline h1 {
   color: var(--color2);
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 52px;
+}
+
+.contact-form p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--color6);
+  padding: 10px 0;
 }
 
 #headline p {
@@ -102,177 +233,6 @@ main {
   line-height: 24px;
 }
 
-main #headline ul {
-  list-style-type: none;
-}
-
-main #headline ul li {
-  display: inline-flex;
-  padding: 0 4px;
-  margin: 10px 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 16px;
-}
-
-#headline ul li a:last-child {
-  padding-left: 0;
-}
-
-#headline h3:hover {
-  color: var(--primary-1);
-}
-
-main .card-works {
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(1fr);
-  margin-top: 120px;
-  gap: 50px;
-  padding: 14px;
-  background-color: var(--white);
-  border-radius: 16px;
-  margin-left: 25px;
-  margin-right: 25px;
-  border: 1px solid #e7e7e7;
-}
-
-main .card-works .card{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 3px 0;
-}
-
-main .card-works .card .card-description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 18px 0;
-}
-
-main .card-works .card .card-description .card-title {
-  text-transform: capitalize;
-  color: var(--color2);
-  font-family: Poppins;
-  font-size: 33px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 44px;
-}
-
-main .card-works .card .card-description .subheading {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-main .card-works .card .card-description .subheading .canopy {
-  color: var(--color3);
-  font-family: Poppins;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-
-main .card-works .card .card-description .subheading .subheading-list {
-  color: var(--color5);
-  font-family: Poppins;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px;
-  text-transform: capitalize;
-}
-
-main .card-works .card .card-description .card-content {
-  color: var(--color3);
-  font-family: Poppins;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-main .card-works .card .card-description .web-languages {
-  display: flex;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  list-style-type: none;
-  gap: 16px;
-  padding-left: 0;
-  color: var(--primary-1);
-  text-transform: uppercase;
-}
-
-main .card-works .card .card-description .web-languages li {
-  background-color: #ebebff;
-  padding: 4px 12px;
-  border-radius: 8px;
-  margin: 10px 0;
-}
-
-main .card-works .card .card-description .web-languages li a {
-  text-decoration: none;
-}
-
-main .card-works .card .card-description .see-project {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--primary-1);
-  border-radius: 8px;
-  background-color: #fff;
-  color: #396df2;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 12px;
-  gap: 10px;
-  letter-spacing: 0.51px;
-}
-
-main .card-works .card .card-description .see-project:hover {
- color: var(--white);
- cursor: pointer;
- background-color: var(--primary-1);
-}
-
-
-/* about  */
-
-#about-myself {
-  padding: 100px 30px;
-  background-color: var(--white);
-  border-radius: 0 80px 0 0;
-  margin-top: 130px;
-}
-  
-#about-myself h1 {
-  color: var(--color2);
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  line-height: 52px;
-}
-  
-#about-myself p {
-  color: var(--color3);
-  line-height: 24px;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  margin: 10px 0;
-}
-  
 #about-myself h3 {
   color: var(--color4);
   text-transform: uppercase;
@@ -284,15 +244,288 @@ main .card-works .card .card-description .see-project:hover {
   padding: 10px 0;
 }
 
-#about-myself h3:hover {
+#headline h3:hover {
   color: var(--primary-1);
 }
 
-#about-myself ul.social {
+/* .card-works {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  margin-top: 120px;
+  gap: 50px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--color12);
+} */
+
+.card-works .card {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 120px;
+  gap: 50px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 16px;
+  border: 1px solid var(--color12);
+  justify-content: center;
+}
+
+.card-works .card .img,
+.card-works .card .img-1,
+.card-works .card .img-2,
+.card-works .card .img-3 {
+  width: 295px;
+  height: 220px;
+}
+
+.card-works .card .img {
+  background-image: url('./Icons/Snapshoot Portfolio.png');
+  background-repeat: no-repeat;
+}
+
+.card-works .card .img-1 {
+  background-image: url('./Icons/Snapshoot Portfolio (1).png');
+  background-repeat: no-repeat;
+  order: 1;
+}
+
+.card-works .card .img-2 {
+  background-image: url('./Icons/Snapshoot Portfolio (2).png');
+  background-repeat: no-repeat;
+}
+
+.card-works .card .img-3 {
+  background-image: url('./Icons/Snapshoot Portfolio (3).png');
+  background-repeat: no-repeat;
+}
+
+.card-works .card .card-description,
+.card-works .card .card-description-1,
+.card-works .card .card-description-2,
+.card-works .card .card-description-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px 0;
+  order: 2;
+}
+
+.card-works .card .card-description .card-title,
+.card-works .card .card-description-1 .card-title,
+.card-works .card .card-description-2 .card-title,
+.card-works .card .card-description-3 .card-title {
+  text-transform: capitalize;
+  color: var(--color2);
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.card-works .card .card-description-2 .card-title::before {
+  content: 'tonic';
+}
+
+.card-works .card .card-description-3 .card-title::before {
+  content: 'multi-post stories';
+}
+
+.details .subheading,
+.card-works .card .card-description .subheading,
+.card-works .card .card-description-1 .subheading,
+.card-works .card .card-description-2 .subheading,
+.card-works .card .card-description-3 .subheading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px;
+}
+
+.details .subheading .canopy,
+.card-works .card .card-description .subheading .canopy,
+.card-works .card .card-description-1 .subheading .canopy,
+.card-works .card .card-description-2 .subheading .canopy,
+.card-works .card .card-description-3 .subheading .canopy {
+  color: var(--color3);
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.card-works .card .card-description-1 .subheading .canopy::before,
+.card-works .card .card-description-2 .subheading .canopy::before,
+.card-works .card .card-description-3 .subheading .canopy::before {
+  content: 'canopy';
+}
+
+.details .subheading .subheading-list,
+.card-works .card .card-description .subheading .subheading-list,
+.card-works .card .card-description-1 .subheading .subheading-list,
+.card-works .card .card-description-1 .subheading .subheading-list-date,
+.card-works .card .card-description-2 .subheading .subheading-list,
+.card-works .card .card-description-2 .subheading .subheading-list-date,
+.card-works .card .card-description-3 .subheading .subheading-list,
+.card-works .card .card-description-3 .subheading .subheading-list-date {
+  color: var(--color18);
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.card-works .card .card-description-1 .subheading .subheading-list::before,
+.card-works .card .card-description-2 .subheading .subheading-list::before,
+.card-works .card .card-description-3 .subheading .subheading-list::before {
+  content: 'back end dev';
+}
+
+.card-works .card .card-description-3 .subheading .subheading-list-date::before {
+  content: '2015';
+}
+
+.card-works .card .card-description .card-content,
+.card-works .card .card-description-1 .card-content,
+.card-works .card .card-description-2 .card-content,
+.card-works .card .card-description-3 .card-content {
+  color: var(--color3);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-works .card .card-description-1 .card-content p::before,
+.card-works .card .card-description-2 .card-content p::before,
+.card-works .card .card-description-3 .card-content p::before {
+  content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+}
+
+.details .web-languages,
+.card-works .card .card-description .web-languages,
+.card-works .card .card-description-1 .web-languages,
+.card-works .card .card-description-2 .web-languages,
+.card-works .card .card-description-3 .web-languages {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  list-style-type: none;
+  gap: 16px;
+  padding-left: 0;
+  color: var(--primary-1);
+  text-transform: uppercase;
+}
+
+.card-works .card .card-description .see-project,
+.card-works .card .card-description-1 .see-project,
+.card-works .card .card-description-2 .see-project-2,
+.card-works .card .card-description-3 .see-project {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--primary-1);
+  border-radius: 8px;
+  background-color: var(--white);
+  color: var(--color13);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  gap: 10px;
+  letter-spacing: 0.51px;
+  transition: background-color 2s, padding 2s ease-in-out;
+  animation: bg 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg {
+  0% {
+    color: #6070ff;
+    background-color: white;
+  }
+
+  25% {
+    color: #757bac;
+    background-color: rgb(176, 178, 206);
+  }
+
+  75% {
+    color: #c3c5db;
+    background-color: rgb(152, 152, 192);
+  }
+
+  100% {
+    color: #fff;
+    background-color: var(--primary-1);
+  }
+}
+
+.card-works .card .card-description .see-project:hover,
+.card-works .card .card-description-1 .see-project:hover,
+.card-works .card .card-description-2 .see-project-2:hover,
+.card-works .card .card-description-3 .see-project:hover {
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--primary-1);
+  padding: 0.8em;
+}
+
+/* about  */
+
+#about-myself {
+  padding: 100px 30px;
+  background-color: var(--white);
+  margin-top: 130px;
+  border-radius: 0 100px 0 0 / 100px;
+  padding-top: 25%;
+  padding-right: 8%;
+  padding-left: 8%;
+  padding-bottom: 40%;
+}
+
+#about-myself .about-1 h1 {
+  color: var(--color2);
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+#about-myself .about-1 p {
+  color: var(--color3);
+  line-height: 24px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+#about-myself .about-1 h3:hover {
+  color: var(--primary-1);
+}
+
+#about-myself .about-1 ul.social {
   list-style-type: none;
 }
-  
-#about-myself ul.social li {
+
+#about-myself .about-1 ul.social li {
   display: inline-flex;
   padding: 10px 8px;
   margin: 10px 0;
@@ -302,11 +535,11 @@ main .card-works .card .card-description .see-project:hover {
   font-size: 16px;
 }
 
-#about-myself .my-resume {
+#about-myself .about-1 .my-resume {
   border: 1px solid var(--primary-1);
   border-radius: 8px;
-  background-color: #fff;
-  color: #396df2;
+  background-color: var(--white);
+  color: var(--color13);
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   font-style: normal;
@@ -317,74 +550,46 @@ main .card-works .card .card-description .see-project:hover {
   gap: 10px;
 }
 
-#about-myself .my-resume:hover {
+#about-myself .about-1 .my-resume:hover {
   color: var(--white);
   cursor: pointer;
   background-color: var(--primary-1);
 }
 
-#about-myself .my-resume:active {
-  box-shadow: 2px 2px 5px #2230d2 ;
+#about-myself .about-1 .my-resume:active {
+  box-shadow: 2px 2px 5px var(--color14);
 }
 
-#about-myself .programming-lang {
+#about-myself .about-2 .programming-lang {
   list-style: none;
   padding-left: 0;
 }
 
-.web-lang {
+#about-myself .about-2 .web-lang {
   padding-left: 16px;
 }
 
-.programming-lang li {
-  display: flex;
-  align-items: center;
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  color: #253858;
-  margin: 16px 20px 16px 0;
-  gap: 16px;
-  padding: 10px;
-}
-
-#about-myself {
-  background-color: #fff;
-  border-radius: 0 100px 0 0 / 100px;
-  padding-top: 25%;
-  padding-right: 8%;
-  padding-left: 8%;
-}
-
-.list-title {
+#about-myself .about-2 .list-title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  color: #000;
+  color: var(--black);
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
   padding-left: 0;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.list-separator {
+#about-myself .about-2 .list-separator {
   width: 100%;
 }
 
-.lists {
+#about-myself .about-2 .lists {
   display: flex;
   align-items: center;
   gap: 30vw;
@@ -396,12 +601,11 @@ ul {
   justify-content: space-around;
 }
 
-.lists h4 {
+#about-myself .about-2 .lists h4 {
   margin-right: 0;
   align-items: center;
   justify-content: flex-start;
-  max-width: 60vw;
-  padding: auto;
+  max-width: 60vw;/* padding: auto; */
   width: 100px;
   right: 80px !important;
 }
@@ -409,4 +613,605 @@ ul {
 #aboutme-list {
   margin: 0;
   padding: 0;
+}
+
+/* contact  */
+#contact {
+  background-color: var(--white);
+}
+
+.contact-bg-form {
+  background-color: var(--primary-1);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 100px 0 0 0 / 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./Icons/contact\ form\ shapes-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  padding-top: 19%;
+  padding-right: 8%;
+  padding-left: 8%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+.contact-form .inputs,
+.inputs-msg {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--color15);
+  background-color: var(--white);
+  margin: 20px 0;
+}
+
+.contact-form .inputs-msg {
+  height: 150px;
+}
+
+.contact-form input,
+textarea {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color3);
+  margin: 12px 0 14px 14px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 14vh;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid blueviolet;
+}
+
+.contact-btn {
+  margin: auto;
+  background-color: var(--white);
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color4);
+  font-weight: 500;
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  border: 1px solid var(--color4);
+  float: left;
+  letter-spacing: 0.51px;
+  line-height: 24px;
+}
+
+.contact-btn:hover {
+  background: var(--color16);
+  color: var(--white);
+}
+
+.contact-btn:active {
+  background-color: var(--color14);
+}
+
+#toolbar .navbar {
+  display: none;
+}
+
+#toolbar .active {
+  display: block;
+  background-color: rgba(96, 112, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
+  backdrop-filter: blur(5px);
+}
+
+#toolbar nav ul.active li:first-of-type {
+  padding-top: 30px;
+}
+
+.close {
+  float: right;
+  margin-right: 30px;
+  color: var(--white);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.project-detail {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(226, 219, 219, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.project-detail .details {
+  width: 90%;
+  height: 95vh;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.details h1.details-title {
+  display: inline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: capitalize;
+  color: var(--color2);
+}
+
+.details .closePopup {
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #67798b;
+}
+
+.details p.description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color3);
+}
+
+.details .details-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#error-message {
+  display: none;
+  color: red;
+}
+
+/* desktop versions */
+@media only screen and (min-width: 768px) {
+  #toolbar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 143px;
+    gap: 670px;
+  }
+
+  #toolbar nav {
+    background-color: transparent;
+  }
+
+  #toolbar nav .menu-icon {
+    display: none;
+  }
+
+  .details-right .details-links a {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  #toolbar nav ul.navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #toolbar nav ul.active li {
+    display: flex;
+    padding: 0 20px;
+    font-weight: 600;
+  }
+
+  #about-myself .about-2 .programming-lang li {
+    width: 122px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #about-myself .about-1 ul.social li {
+    padding: 10px 10px;
+    margin: 10px 0;
+  }
+
+  #toolbar nav ul.navbar li:nth-of-type(2n),
+  #toolbar nav ul.navbar li:nth-of-type(3) {
+    padding-left: 30px;
+    font-weight: 500;
+  }
+
+  #toolbar nav ul.navbar li a {
+    color: var(--color3);
+  }
+
+  #headline {
+    background-color: var(--white);
+    background-image: url(./Icons/desktop/Header\ bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    border-radius: 0 0 0 80px;
+    padding: 400px 0;
+  }
+
+  #headline .heading-section {
+    padding: 289px 260px;
+  }
+
+  #headline h1 {
+    width: 450px;
+    color: var(--color2);
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  #headline p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    margin: 15px 0;
+  }
+
+  /* card  */
+
+  .card-works .card {
+    width: 90%;
+    border: 1px solid var(--color7);
+    border-radius: 24px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .card-works .card:nth-child(even) {
+    direction: rtl;
+  }
+
+  .card-works .card:nth-child(odd) {
+    direction: ltr;
+  }
+
+  .card-works .card .img {
+    width: 100%;
+    height: 448px;
+    background-image: url('./Icons/desktop/1 Snapshoot Portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .card-works .card .img-1 {
+    width: 47%;
+    height: 448px;
+    background-image: url('./Icons/desktop/2 Snapshoot Portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    order: 2;
+  }
+
+  .card-works .card .img-2 {
+    width: 47%;
+    height: 448px;
+    background-image: url('./Icons/desktop/3 Snapshoot Portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .card-works .card .img-3 {
+    width: 47%;
+    height: 448px;
+    background-image: url('./Icons/desktop/4 Snapshoot Portfolio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    order: 2;
+  }
+
+  .card-works .card .card-description,
+  .card-works .card .card-description-1,
+  .card-works .card .card-description-2,
+  .card-works .card .card-description-3 {
+    /* width: 100%; */
+    height: 448px;
+    gap: 18px;
+    padding: 28px 30px;
+    direction: ltr;
+  }
+
+  .card-works .card .card-description-1,
+  .card-works .card .card-description-3 {
+    order: 1;
+  }
+
+  .card-works .card .card-description .card-title,
+  .card-works .card .card-description-1 .card-title,
+  .card-works .card .card-description-2 .card-title,
+  .card-works .card .card-description-3 .card-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card-works .card .card-description-2 .card-title::before {
+    content: 'facebook 360';
+  }
+
+  .card-works .card .card-description-3 .card-title::before {
+    content: 'uber navigation';
+  }
+
+  .card-works .card .card-description .subheading .canopy,
+  .card-works .card .card-description-1 .subheading .canopy,
+  .card-works .card .card-description-2 .subheading .canopy,
+  .card-works .card .card-description-3 .subheading .canopy {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .card-works .card .card-description-1 .subheading .canopy::before,
+  .card-works .card .card-description-2 .subheading .canopy::before {
+    content: 'facebook';
+  }
+
+  .card-works .card .card-description-3 .subheading .canopy::before {
+    content: 'uber';
+  }
+
+  .card-works .card .card-description .subheading .subheading-list,
+  .card-works .card .card-description-1 .subheading .subheading-list,
+  .card-works .card .card-description-1 .subheading .subheading-list-date,
+  .card-works .card .card-description-2 .subheading .subheading-list,
+  .card-works .card .card-description-2 .subheading .subheading-list-date,
+  .card-works .card .card-description-3 .subheading .subheading-list,
+  .card-works .card .card-description-3 .subheading .subheading-list-date {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .card-works .card .card-description-1 .subheading .subheading-list::before,
+  .card-works .card .card-description-2 .subheading .subheading-list::before {
+    content: 'full stack dev';
+  }
+
+  .card-works .card .card-description-3 .subheading .subheading-list::before {
+    content: 'lead developer';
+  }
+
+  .card-works .card .card-description-3 .subheading .subheading-list-date::before {
+    content: '2018';
+  }
+
+  .card-works .card .card-description .card-content,
+  .card-works .card .card-description-1 .card-content,
+  .card-works .card .card-description-2 .card-content,
+  .card-works .card .card-description-3 .card-content {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 14px 0 0 0;
+    color: var(--color3);
+  }
+
+  .card-works .card .card-description-1 .card-content p::before {
+    content: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.';
+  }
+
+  .card-works .card .card-description-2 .card-content p::before {
+    content: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.";
+  }
+
+  .card-works .card .card-description-3 .card-content p::before {
+    content: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.";
+  }
+
+  .card-works .card .card-description .web-languages,
+  .card-works .card .card-description-1 .web-languages,
+  .card-works .card .card-description-2 .web-languages,
+  .card-works .card .card-description-3 .web-languages {
+    text-transform: lowercase;
+  }
+
+  .card-works .card .card-description-1 .web-languages li.ruby,
+  .card-works .card .card-description-2 .web-languages li.ruby,
+  .card-works .card .card-description-3 .web-languages li.ruby {
+    display: block;
+  }
+
+  .card-works .card .card-description-2 .see-project-2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-1);
+    border-radius: 8px;
+    background-color: var(--color17);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 12px;
+    gap: 10px;
+    letter-spacing: 0.51px;
+    transition: background-color 2s;
+  }
+
+  .card-works .card .card-description .see-project,
+  .card-works .card .card-description-2 .see-project-2 {
+    margin: 8px 0;
+  }
+
+  .card-works .card .card-description-2 .see-project-2:hover {
+    color: var(--color17);
+    cursor: pointer;
+    background-color: var(--white);
+  }
+
+  /* about  */
+  #about-myself {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 160px;
+    padding-left: 143px;
+    padding-right: 142px;
+    padding-bottom: 190px;
+  }
+
+  #about-myself .about-1 {
+    width: 40%;
+  }
+
+  #about-myself .about-1 p {
+    color: var(--color3);
+    font-size: 15px;
+    line-height: 24px;
+    margin: 10px 0;
+  }
+
+  #about-myself .about-2 {
+    width: 60%;
+  }
+
+  #about-myself .about-2 .web-lang {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left: 16px;
+  }
+
+  /* contact  */
+  #contact {
+    width: 100%;
+  }
+
+  .contact-bg-form {
+    width: 100%;
+    background-image: url('./Icons/desktop/contact form background shapes.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 50%;
+    margin: auto;
+    background: transparent;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form .inputs,
+  .inputs-msg {
+    border-radius: 0;
+    margin: 12px 0;
+  }
+
+  .contact-btn {
+    margin: 12px auto;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .project-detail {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(226, 219, 219, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    overflow: auto;
+  }
+
+  .project-detail .details {
+    width: 85%;
+    height: auto;
+    padding: 30px;
+    margin-top: 40px;
+  }
+
+  .details .close {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #67798b;
+    display: block;
+  }
+
+  .details .detail-img {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .details .details-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .details-content .description {
+    width: 65%;
+  }
+
+  .details-right .details-links a button {
+    font-size: 12px;
+  }
 }
