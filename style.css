@@ -70,10 +70,7 @@ ul {
 }
 
 .details .web-languages li,
-.card-works .card .card-description .web-languages li,
-.card-works .card .card-description-1 .web-languages li,
-.card-works .card .card-description-2 .web-languages li,
-.card-works .card .card-description-3 .web-languages li {
+.card-works .card .card-description .web-languages li {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
   background-color: var(--color11);
@@ -92,10 +89,6 @@ ul {
   font-size: 16px;
 }
 
-/* #toolbar nav ul li {
-  display: inline;
-} */
-
 #about-myself .about-2 .programming-lang li {
   display: flex;
   align-items: center;
@@ -112,17 +105,8 @@ ul {
   padding: 10px;
 }
 
-.card-works .card .card-description-1 .web-languages li.ruby,
-.card-works .card .card-description-2 .web-languages li.ruby,
-.card-works .card .card-description-3 .web-languages li.ruby {
-  display: none;
-}
-
 .details .web-languages li a,
-.card-works .card .card-description .web-languages li a,
-.card-works .card .card-description-1 .web-languages li a,
-.card-works .card .card-description-2 .web-languages li a,
-.card-works .card .card-description-3 .web-languages li a {
+.card-works .card .card-description .web-languages li a {
   text-decoration: none;
   color: var(--color16);
 }
@@ -248,19 +232,6 @@ ul {
   color: var(--primary-1);
 }
 
-/* .card-works {
-  width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  margin-top: 120px;
-  gap: 50px;
-  padding: 20px;
-  background-color: var(--white);
-  border-radius: 16px;
-  border: 1px solid var(--color12);
-} */
-
 .card-works .card {
   width: 90%;
   margin: auto;
@@ -275,39 +246,12 @@ ul {
   justify-content: center;
 }
 
-.card-works .card .img,
-.card-works .card .img-1,
-.card-works .card .img-2,
-.card-works .card .img-3 {
+.card-works .card .img {
   width: 295px;
   height: 220px;
 }
 
-.card-works .card .img {
-  background-image: url('./Icons/Snapshoot Portfolio.png');
-  background-repeat: no-repeat;
-}
-
-.card-works .card .img-1 {
-  background-image: url('./Icons/Snapshoot Portfolio (1).png');
-  background-repeat: no-repeat;
-  order: 1;
-}
-
-.card-works .card .img-2 {
-  background-image: url('./Icons/Snapshoot Portfolio (2).png');
-  background-repeat: no-repeat;
-}
-
-.card-works .card .img-3 {
-  background-image: url('./Icons/Snapshoot Portfolio (3).png');
-  background-repeat: no-repeat;
-}
-
-.card-works .card .card-description,
-.card-works .card .card-description-1,
-.card-works .card .card-description-2,
-.card-works .card .card-description-3 {
+.card-works .card .card-description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -316,10 +260,7 @@ ul {
   order: 2;
 }
 
-.card-works .card .card-description .card-title,
-.card-works .card .card-description-1 .card-title,
-.card-works .card .card-description-2 .card-title,
-.card-works .card .card-description-3 .card-title {
+.card-works .card .card-description .card-title {
   text-transform: capitalize;
   color: var(--color2);
   font-family: 'Poppins', sans-serif;
@@ -329,29 +270,15 @@ ul {
   line-height: 44px;
 }
 
-.card-works .card .card-description-2 .card-title::before {
-  content: 'tonic';
-}
-
-.card-works .card .card-description-3 .card-title::before {
-  content: 'multi-post stories';
-}
-
 .details .subheading,
-.card-works .card .card-description .subheading,
-.card-works .card .card-description-1 .subheading,
-.card-works .card .card-description-2 .subheading,
-.card-works .card .card-description-3 .subheading {
+.card-works .card .card-description .subheading {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
 .details .subheading .canopy,
-.card-works .card .card-description .subheading .canopy,
-.card-works .card .card-description-1 .subheading .canopy,
-.card-works .card .card-description-2 .subheading .canopy,
-.card-works .card .card-description-3 .subheading .canopy {
+.card-works .card .card-description .subheading .canopy {
   color: var(--color3);
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -361,20 +288,8 @@ ul {
   text-transform: uppercase;
 }
 
-.card-works .card .card-description-1 .subheading .canopy::before,
-.card-works .card .card-description-2 .subheading .canopy::before,
-.card-works .card .card-description-3 .subheading .canopy::before {
-  content: 'canopy';
-}
-
 .details .subheading .subheading-list,
-.card-works .card .card-description .subheading .subheading-list,
-.card-works .card .card-description-1 .subheading .subheading-list,
-.card-works .card .card-description-1 .subheading .subheading-list-date,
-.card-works .card .card-description-2 .subheading .subheading-list,
-.card-works .card .card-description-2 .subheading .subheading-list-date,
-.card-works .card .card-description-3 .subheading .subheading-list,
-.card-works .card .card-description-3 .subheading .subheading-list-date {
+.card-works .card .card-description .subheading .subheading-list {
   color: var(--color18);
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -384,20 +299,7 @@ ul {
   text-transform: capitalize;
 }
 
-.card-works .card .card-description-1 .subheading .subheading-list::before,
-.card-works .card .card-description-2 .subheading .subheading-list::before,
-.card-works .card .card-description-3 .subheading .subheading-list::before {
-  content: 'back end dev';
-}
-
-.card-works .card .card-description-3 .subheading .subheading-list-date::before {
-  content: '2015';
-}
-
-.card-works .card .card-description .card-content,
-.card-works .card .card-description-1 .card-content,
-.card-works .card .card-description-2 .card-content,
-.card-works .card .card-description-3 .card-content {
+.card-works .card .card-description .card-content {
   color: var(--color3);
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -406,17 +308,8 @@ ul {
   line-height: 24px;
 }
 
-.card-works .card .card-description-1 .card-content p::before,
-.card-works .card .card-description-2 .card-content p::before,
-.card-works .card .card-description-3 .card-content p::before {
-  content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
-}
-
 .details .web-languages,
-.card-works .card .card-description .web-languages,
-.card-works .card .card-description-1 .web-languages,
-.card-works .card .card-description-2 .web-languages,
-.card-works .card .card-description-3 .web-languages {
+.card-works .card .card-description .web-languages {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
@@ -431,10 +324,7 @@ ul {
   text-transform: uppercase;
 }
 
-.card-works .card .card-description .see-project,
-.card-works .card .card-description-1 .see-project,
-.card-works .card .card-description-2 .see-project-2,
-.card-works .card .card-description-3 .see-project {
+.card-works .card .card-description .see-project {
   display: flex;
   align-items: center;
   border: 1px solid var(--primary-1);
@@ -476,10 +366,7 @@ ul {
   }
 }
 
-.card-works .card .card-description .see-project:hover,
-.card-works .card .card-description-1 .see-project:hover,
-.card-works .card .card-description-2 .see-project-2:hover,
-.card-works .card .card-description-3 .see-project:hover {
+.card-works .card .card-description .see-project:hover {
   color: var(--white);
   cursor: pointer;
   background-color: var(--primary-1);
@@ -604,7 +491,6 @@ ul {
   margin-right: 0;
   align-items: center;
   justify-content: flex-start;
-  max-width: 60vw;/* padding: auto; */
   width: 100px;
   right: 80px !important;
 }
@@ -948,143 +834,43 @@ textarea {
     order: 2;
   }
 
-  .card-works .card .card-description,
-  .card-works .card .card-description-1,
-  .card-works .card .card-description-2,
-  .card-works .card .card-description-3 {
-    /* width: 100%; */
+  .card-works .card .card-description {
     height: 448px;
     gap: 18px;
     padding: 28px 30px;
     direction: ltr;
   }
 
-  .card-works .card .card-description-1,
-  .card-works .card .card-description-3 {
-    order: 1;
-  }
-
-  .card-works .card .card-description .card-title,
-  .card-works .card .card-description-1 .card-title,
-  .card-works .card .card-description-2 .card-title,
-  .card-works .card .card-description-3 .card-title {
+  .card-works .card .card-description .card-title {
     font-size: 40px;
     line-height: 52px;
   }
 
-  .card-works .card .card-description-2 .card-title::before {
-    content: 'facebook 360';
-  }
-
-  .card-works .card .card-description-3 .card-title::before {
-    content: 'uber navigation';
-  }
-
-  .card-works .card .card-description .subheading .canopy,
-  .card-works .card .card-description-1 .subheading .canopy,
-  .card-works .card .card-description-2 .subheading .canopy,
-  .card-works .card .card-description-3 .subheading .canopy {
+  .card-works .card .card-description .subheading .canopy {
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
   }
 
-  .card-works .card .card-description-1 .subheading .canopy::before,
-  .card-works .card .card-description-2 .subheading .canopy::before {
-    content: 'facebook';
-  }
-
-  .card-works .card .card-description-3 .subheading .canopy::before {
-    content: 'uber';
-  }
-
-  .card-works .card .card-description .subheading .subheading-list,
-  .card-works .card .card-description-1 .subheading .subheading-list,
-  .card-works .card .card-description-1 .subheading .subheading-list-date,
-  .card-works .card .card-description-2 .subheading .subheading-list,
-  .card-works .card .card-description-2 .subheading .subheading-list-date,
-  .card-works .card .card-description-3 .subheading .subheading-list,
-  .card-works .card .card-description-3 .subheading .subheading-list-date {
+  .card-works .card .card-description .subheading .subheading-list {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
   }
 
-  .card-works .card .card-description-1 .subheading .subheading-list::before,
-  .card-works .card .card-description-2 .subheading .subheading-list::before {
-    content: 'full stack dev';
-  }
-
-  .card-works .card .card-description-3 .subheading .subheading-list::before {
-    content: 'lead developer';
-  }
-
-  .card-works .card .card-description-3 .subheading .subheading-list-date::before {
-    content: '2018';
-  }
-
-  .card-works .card .card-description .card-content,
-  .card-works .card .card-description-1 .card-content,
-  .card-works .card .card-description-2 .card-content,
-  .card-works .card .card-description-3 .card-content {
+  .card-works .card .card-description .card-content {
     font-size: 18px;
     line-height: 24px;
     padding: 14px 0 0 0;
     color: var(--color3);
   }
 
-  .card-works .card .card-description-1 .card-content p::before {
-    content: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.';
-  }
-
-  .card-works .card .card-description-2 .card-content p::before {
-    content: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.";
-  }
-
-  .card-works .card .card-description-3 .card-content p::before {
-    content: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.";
-  }
-
-  .card-works .card .card-description .web-languages,
-  .card-works .card .card-description-1 .web-languages,
-  .card-works .card .card-description-2 .web-languages,
-  .card-works .card .card-description-3 .web-languages {
+  .card-works .card .card-description .web-languages {
     text-transform: lowercase;
   }
 
-  .card-works .card .card-description-1 .web-languages li.ruby,
-  .card-works .card .card-description-2 .web-languages li.ruby,
-  .card-works .card .card-description-3 .web-languages li.ruby {
-    display: block;
-  }
-
-  .card-works .card .card-description-2 .see-project-2 {
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--primary-1);
-    border-radius: 8px;
-    background-color: var(--color17);
-    color: var(--white);
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    padding: 12px;
-    gap: 10px;
-    letter-spacing: 0.51px;
-    transition: background-color 2s;
-  }
-
-  .card-works .card .card-description .see-project,
-  .card-works .card .card-description-2 .see-project-2 {
+  .card-works .card .card-description .see-project {
     margin: 8px 0;
-  }
-
-  .card-works .card .card-description-2 .see-project-2:hover {
-    color: var(--color17);
-    cursor: pointer;
-    background-color: var(--white);
   }
 
   /* about  */

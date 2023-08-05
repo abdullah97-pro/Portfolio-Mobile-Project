@@ -1,18 +1,3 @@
-// function show() {
-//   const x = document.getElementById('menubar');
-//   if (x.style.display === 'block' & x.className === 'navbar') {
-//     x.style.display = 'none';
-//     console.log('1');
-//   } else if (x.className === 'navbar') {
-//     x.className += ' active';
-//     console.log('2');
-
-//   } else {
-//     x.className = 'navbar';
-//     console.log('3');
-//   }
-// }
-
 const workdata = [
   {
     id: 1,
@@ -202,6 +187,10 @@ function showPopup() {
     } else {
       errorMessage.textContent = 'Please enter the email address in lowercase.';
       errorMessage.style.display = 'block';
+
+      setTimeout(() => {
+        errorMessage.style.display = 'none';
+      }, 3000);
     }
   });
 }
