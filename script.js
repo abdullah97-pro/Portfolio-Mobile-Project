@@ -188,21 +188,57 @@ popup.addEventListener('click', remove);
 // contact form
 
 function showPopup() {
+  // const form = document.getElementById('contact-form');
+  // const emailInput = form.querySelector('input[name="email"]');
+  // const errorMessage = document.getElementById('error-message');
+
+  // form.addEventListener('submit', (event) => {
+  //   event.preventDefault();
+
+  //   const email = emailInput.value;
+
+  //   if (email.toLowerCase() === email) {
+  //     form.submit();
+  //   } else {
+  //     errorMessage.textContent = 'Please enter the email address in lowercase.';
+  //     errorMessage.style.display = 'block';
+  //   }
+  // });
+
   const form = document.getElementById('contact-form');
   const emailInput = form.querySelector('input[name="email"]');
   const errorMessage = document.getElementById('error-message');
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const email = emailInput.value;
-
-    if (email.toLowerCase() === email) {
-      form.submit();
-    } else {
-      errorMessage.textContent = 'Please enter the email address in lowercase.';
-      errorMessage.style.display = 'block';
+  
+  window.addEventListener('DOMContentLoaded', function() {
+    const formData = localStorage.getItem('formData');
+    if (formData) {
+      const { firstname, email, msg } = JSON.parse(formData);
+      form.firstname.value = firstname;
+      emailInput.value = email;
+      form.msg.value = msg;
     }
   });
+  
+  form.addEventListener('change', function() {
+    const firstname = form.firstname.value;
+    const email = emailInput.value;
+    const msg = form.msg.value;
+  
+    const formData = { firstname, email, msg };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+  
+  // form.addEventListener('submit', function(event) {
+  //   event.preventDefault();
+  
+  //   const email = emailInput.value;
+  
+    // if (email.toLowerCase() === email) {
+    //   form.submit();
+    // } else {
+    //   errorMessage.textContent = 'Please enter the email address in lowercase.';
+    //   errorMessage.style.display = 'block';
+    // }
+  // });
 }
 showPopup();
