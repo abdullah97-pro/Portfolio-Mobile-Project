@@ -1176,6 +1176,7 @@ textarea {
   .project-detail .details {
     width: 85%;
     height: auto;
+    padding: 30px;
     margin-top: 40px;
   }
 
