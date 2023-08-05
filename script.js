@@ -208,8 +208,8 @@ function showPopup() {
   const form = document.getElementById('contact-form');
   const emailInput = form.querySelector('input[name="email"]');
   const errorMessage = document.getElementById('error-message');
-  
-  window.addEventListener('DOMContentLoaded', function() {
+
+  window.addEventListener('DOMContentLoaded', () => {
     const formData = localStorage.getItem('formData');
     if (formData) {
       const { firstname, email, msg } = JSON.parse(formData);
@@ -218,27 +218,27 @@ function showPopup() {
       form.msg.value = msg;
     }
   });
-  
-  form.addEventListener('change', function() {
+
+  form.addEventListener('change', () => {
     const firstname = form.firstname.value;
     const email = emailInput.value;
     const msg = form.msg.value;
-  
+
     const formData = { firstname, email, msg };
     localStorage.setItem('formData', JSON.stringify(formData));
   });
-  
-   form.addEventListener('submit', function(event) {
-     event.preventDefault();
-  
-     const email = emailInput.value;
-  
-     if (email.toLowerCase() === email) {
-       form.submit();
-     } else {
-       errorMessage.textContent = 'Please enter the email address in lowercase.';
-       errorMessage.style.display = 'block';
-     }
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const email = emailInput.value;
+
+    if (email.toLowerCase() === email) {
+      form.submit();
+    } else {
+      errorMessage.textContent = 'Please enter the email address in lowercase.';
+      errorMessage.style.display = 'block';
+    }
   });
 }
 showPopup();
