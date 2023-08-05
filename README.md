@@ -4,7 +4,7 @@
 
  <!-- LOGO -->
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
   <br/>
 
 <!-- MAIN HEADING -->
@@ -81,8 +81,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
-
-> Add a link to your deployed project.
+<!-- > Add a link to your deployed project. -->
 
 - [Live Demo Link](https://abdullah97-pro.github.io/Portfolio-Mobile-Project/) 
 
@@ -131,8 +130,7 @@ You can deploy this project using:
 
 <!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
+<!-- > Mention all of the collaborators of this project. -->
 
 👤 **Abdullah Ahmadi**
 
@@ -144,8 +142,7 @@ You can deploy this project using:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
+<!-- > Describe 1 - 3 features you will add to the project. -->
 
 - [ ] **Nodejs setup**
 - [ ] **npm setup**
