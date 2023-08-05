@@ -186,3 +186,22 @@ hidebtn.addEventListener('click', hide);
 popup.addEventListener('click', remove);
 
 // contact form
+
+function showPopup() {
+  const form = document.getElementById('contact-form');
+  const emailInput = form.querySelector('input[name="email"]');
+  const errorMessage = document.getElementById('error-message');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = emailInput.value;
+
+    if (email.toLowerCase() === email) {
+      form.submit();
+    } else {
+      errorMessage.textContent = 'Please enter the email address in lowercase.';
+      errorMessage.style.display = 'block';
+    }
+  });
+}
