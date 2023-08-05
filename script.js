@@ -106,7 +106,7 @@ workdata.forEach((data) => {
 
 workContainer.innerHTML = workHTML;
 
-// popup window 
+// popup window
 
 const seeProjectButtons = document.querySelectorAll('[data-work-array]');
 if (seeProjectButtons) {
@@ -185,5 +185,4 @@ showbtn.addEventListener('click', show);
 hidebtn.addEventListener('click', hide);
 popup.addEventListener('click', remove);
 
-// contact form 
-
+// contact form
