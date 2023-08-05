@@ -192,7 +192,7 @@ function showPopup() {
   const emailInput = form.querySelector('input[name="email"]');
   const errorMessage = document.getElementById('error-message');
 
-  form.addEventListener('submit', function(event) {
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const email = emailInput.value;
@@ -205,3 +205,4 @@ function showPopup() {
     }
   });
 }
+showPopup();
