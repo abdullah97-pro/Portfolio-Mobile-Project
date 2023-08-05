@@ -25,7 +25,7 @@ const workdata = [
     des1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
-    liveLink: '',
+    liveLink: 'https://abdullah97-pro.github.io/Portfolio-Mobile-Project/',
     sourceLink: 'https://github.com/abdullah97-pro/Portfolio-Mobile-Project/tree/addpopupWindow',
   },
   {
@@ -39,7 +39,7 @@ const workdata = [
     des1: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: '',
+    liveLink: 'https://abdullah97-pro.github.io/Portfolio-Mobile-Project/',
     sourceLink: 'https://github.com/abdullah97-pro/Portfolio-Mobile-Project/tree/addpopupWindow',
   },
   {
@@ -53,7 +53,7 @@ const workdata = [
     des1: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: '',
+    liveLink: 'https://abdullah97-pro.github.io/Portfolio-Mobile-Project/',
     sourceLink: 'https://github.com/abdullah97-pro/Portfolio-Mobile-Project/tree/addpopupWindow',
   },
   {
@@ -67,7 +67,7 @@ const workdata = [
     des1: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     des2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: '',
+    liveLink: 'https://abdullah97-pro.github.io/Portfolio-Mobile-Project/',
     sourceLink: 'https://github.com/abdullah97-pro/Portfolio-Mobile-Project/tree/addpopupWindow',
   },
 ];
