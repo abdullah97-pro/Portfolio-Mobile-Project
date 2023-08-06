@@ -199,11 +199,11 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it!
           </p>
-          <form action="https://formspree.io/f/xqkvalkp" method="post" id="contact-form">
+          <form action="https://formspree.io/f/xqkvalkp" method="post" class="contact-form" id="contact-form">
             <div class="inputs">
               <input
                 type="text"
-                name="firstname"
+                name="name" id="name"
                 placeholder="Abdullah Ahmadi"
                 maxlength="30"
                 required
@@ -228,7 +228,7 @@
               ></textarea>
             </div>
             <div id="error-message"></div>
-            <button type="submit" onclick="showPopup()" class="contact-btn">Get in touch</button>
+            <button type="submit" id="submit-btn" onclick="showPopup()" class="contact-btn">Get in touch</button>
           </form>
         </div>
       </div>

@@ -149,6 +149,32 @@ if (seeProjectButtons) {
   });
 }
 
+const saveFormData = () => {
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    msg: document.getElementById("msg").value,
+  };
+
+  // Save the entire form data as a single object in local storage
+  localStorage.setItem("formData", JSON.stringify(formData));
+};
+
+// Function to load form data from local storage and pre-fill the form
+const loadFormData = () => {
+  const formData = JSON.parse(localStorage.getItem("formData"));
+  if (formData) {
+    document.getElementById("name").value = formData.name || "";
+    document.getElementById("email").value = formData.email || "";
+    document.getElementById("msg").value = formData.msg || "";
+  }
+};
+
+// Add event listeners to save data on input change and load data on page load
+const contactform = document.querySelector(".contact-form");
+contactform.addEventListener("input", saveFormData);
+window.addEventListener("load", loadFormData);
+
 const showbtn = document.querySelector('.active');
 const hidebtn = document.querySelector('.navbar');
 const popup = document.querySelector('.project-detail');
@@ -173,40 +199,15 @@ popup.addEventListener('click', remove);
 // contact form
 
 function showPopup() {
+  
   const form = document.getElementById('contact-form');
   const emailInput = form.querySelector('input[name="email"]');
   const errorMessage = document.getElementById('error-message');
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedFormData = localStorage.getItem('formData');
-    if (savedFormData) {
-      const parsedFormData = JSON.parse(savedFormData);
-      form.firstname.value = parsedFormData.firstname;
-      emailInput.email.value = parsedFormData.emailInput;
-      form.msg.value = parsedFormData.msg;
-    }
-  });
-
-  form.addEventListener('change', () => {
-    const formData = {
-      firstname: form.firstname.value,
-      email: form.email.value,
-      msg: form.msg.value,
-    };
-    localStorage.setItem('formData', JSON.stringify(formData));
-  });
-
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formData = {
-      firstname: form.firstname.value,
-      email: form.email.value,
-      msg: form.msg.value,
-    };
-    localStorage.setItem('formData', JSON.stringify(formData));
-
-    const { email } = formData;
+    const email = emailInput.value;
 
     if (email.toLowerCase() === email) {
       form.submit();
@@ -214,11 +215,12 @@ function showPopup() {
       errorMessage.textContent = 'Please enter the email address in lowercase.';
       errorMessage.style.display = 'block';
 
-      // Set a timer to hide the error message after 3 seconds
       setTimeout(() => {
         errorMessage.style.display = 'none';
       }, 3000);
     }
   });
+  
 }
 showPopup();
+
