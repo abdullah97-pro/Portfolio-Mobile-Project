@@ -151,29 +151,29 @@ if (seeProjectButtons) {
 
 const saveFormData = () => {
   const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    msg: document.getElementById("msg").value,
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    msg: document.getElementById('msg').value,
   };
 
   // Save the entire form data as a single object in local storage
-  localStorage.setItem("formData", JSON.stringify(formData));
+  localStorage.setItem('formData', JSON.stringify(formData));
 };
 
 // Function to load form data from local storage and pre-fill the form
 const loadFormData = () => {
-  const formData = JSON.parse(localStorage.getItem("formData"));
+  const formData = JSON.parse(localStorage.getItem('formData'));
   if (formData) {
-    document.getElementById("name").value = formData.name || "";
-    document.getElementById("email").value = formData.email || "";
-    document.getElementById("msg").value = formData.msg || "";
+    document.getElementById('name').value = formData.name || '';
+    document.getElementById('email').value = formData.email || '';
+    document.getElementById('msg').value = formData.msg || '';
   }
 };
 
 // Add event listeners to save data on input change and load data on page load
-const contactform = document.querySelector(".contact-form");
-contactform.addEventListener("input", saveFormData);
-window.addEventListener("load", loadFormData);
+const contactform = document.querySelector('.contact');
+contactform.addEventListener('input', saveFormData);
+window.addEventListener('load', loadFormData);
 
 const showbtn = document.querySelector('.active');
 const hidebtn = document.querySelector('.navbar');
@@ -199,7 +199,6 @@ popup.addEventListener('click', remove);
 // contact form
 
 function showPopup() {
-  
   const form = document.getElementById('contact-form');
   const emailInput = form.querySelector('input[name="email"]');
   const errorMessage = document.getElementById('error-message');
@@ -220,7 +219,5 @@ function showPopup() {
       }, 3000);
     }
   });
-  
 }
 showPopup();
-
